@@ -1,0 +1,40 @@
+{
+  "stringTable": {},
+  "buildFiles": [
+    "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/lzw/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+      "-C",
+      "/Users/lzw/AndroidStudioProjects/simpledlna/camera/.cxx/RelWithDebInfo/3z3k2619/x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/lzw/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+    "-C",
+    "/Users/lzw/AndroidStudioProjects/simpledlna/camera/.cxx/RelWithDebInfo/3z3k2619/x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "ncnnbodypose-RelWithDebInfo-x86": {
+      "buildCommandComponents": [
+        "/Users/lzw/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+        "-C",
+        "/Users/lzw/AndroidStudioProjects/simpledlna/camera/.cxx/RelWithDebInfo/3z3k2619/x86",
+        "ncnnbodypose"
+      ],
+      "buildType": "release",
+      "abi": "x86",
+      "artifactName": "ncnnbodypose",
+      "output": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/build/intermediates/cxx/RelWithDebInfo/3z3k2619/obj/x86/libncnnbodypose.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {},
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

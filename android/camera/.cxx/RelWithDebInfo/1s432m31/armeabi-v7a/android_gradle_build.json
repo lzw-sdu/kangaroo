@@ -1,0 +1,40 @@
+{
+  "stringTable": {},
+  "buildFiles": [
+    "/Users/lzw/AndroidStudioProjects/kangaroo/android/camera/src/main/jni/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/lzw/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+      "-C",
+      "/Users/lzw/AndroidStudioProjects/kangaroo/android/camera/.cxx/RelWithDebInfo/1s432m31/armeabi-v7a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/lzw/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+    "-C",
+    "/Users/lzw/AndroidStudioProjects/kangaroo/android/camera/.cxx/RelWithDebInfo/1s432m31/armeabi-v7a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "ncnnbodypose-RelWithDebInfo-armeabi-v7a": {
+      "buildCommandComponents": [
+        "/Users/lzw/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+        "-C",
+        "/Users/lzw/AndroidStudioProjects/kangaroo/android/camera/.cxx/RelWithDebInfo/1s432m31/armeabi-v7a",
+        "ncnnbodypose"
+      ],
+      "buildType": "release",
+      "abi": "armeabi-v7a",
+      "artifactName": "ncnnbodypose",
+      "output": "/Users/lzw/AndroidStudioProjects/kangaroo/build/camera/intermediates/cxx/RelWithDebInfo/1s432m31/obj/armeabi-v7a/libncnnbodypose.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {},
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

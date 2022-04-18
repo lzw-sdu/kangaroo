@@ -1,0 +1,27 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildToolsVersion buildToolsVersion
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api 'com.github.ChillingVan:android-openGL-canvas:v1.4.0.0'
+    api 'net.butterflytv.utils:rtmp-client:3.1.0'
+    api "androidx.appcompat:appcompat:$rootProject.ext.supportLibraryVersion"
+    implementation 'com.github.pedroSG94.rtmp-rtsp-stream-client-java:rtplibrary:2.1.7'
+//    implementation 'com.tencent.liteav:LiteAVSDK_Professional:9.5.11207@aar'
+}
+repositories {
+    mavenCentral()
+}

@@ -1,0 +1,14 @@
+ninja: Entering directory `/Users/lzw/AndroidStudioProjects/kangaroo/android/camera/.cxx/Debug/2v4j2l6o/x86'
+[1/4] Building CXX object CMakeFiles/ncnnbodypose.dir/ndkcamera.cpp.o
+/Users/lzw/AndroidStudioProjects/kangaroo/android/camera/src/main/jni/ndkcamera.cpp:138:117: warning: format specifies type 'long' but the argument has type 'int64_t' (aka 'long long') [-Wformat]
+    __android_log_print(ANDROID_LOG_WARN, "NdkCamera", "onCaptureSequenceCompleted %p %d %ld", session, sequenceId, frameNumber);
+                                                                                         ~~~                        ^~~~~~~~~~~
+                                                                                         %lld
+1 warning generated.
+[2/4] Building CXX object CMakeFiles/ncnnbodypose.dir/nanodetncnn.cpp.o
+/Users/lzw/AndroidStudioProjects/kangaroo/android/camera/src/main/jni/nanodetncnn.cpp:222:9: warning: 'on_image' has C-linkage specified, but returns user-defined type 'cv::Mat' which is incompatible with C [-Wreturn-type-c-linkage]
+cv::Mat on_image(const unsigned char *nv21, int nv21_width, int nv21_height) {
+        ^
+1 warning generated.
+[3/4] Building CXX object CMakeFiles/ncnnbodypose.dir/nanodet.cpp.o
+[4/4] Linking CXX shared library /Users/lzw/AndroidStudioProjects/kangaroo/build/camera/intermediates/cxx/Debug/2v4j2l6o/obj/x86/libncnnbodypose.so

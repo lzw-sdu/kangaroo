@@ -1,0 +1,14 @@
+//
+// Created by 26864 on 2022/3/14.
+//
+
+#ifndef NCNN_ANDROID_MOVENET_MAIN_POSENETNCNN_H
+#define NCNN_ANDROID_MOVENET_MAIN_POSENETNCNN_H
+
+
+class posenetncnn {
+
+};
+
+
+#endif //NCNN_ANDROID_MOVENET_MAIN_POSENETNCNN_H

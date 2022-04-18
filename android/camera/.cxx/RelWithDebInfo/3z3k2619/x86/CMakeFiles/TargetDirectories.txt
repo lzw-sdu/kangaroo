@@ -1,0 +1,3 @@
+/Users/lzw/AndroidStudioProjects/simpledlna/camera/.cxx/RelWithDebInfo/3z3k2619/x86/CMakeFiles/rebuild_cache.dir
+/Users/lzw/AndroidStudioProjects/simpledlna/camera/.cxx/RelWithDebInfo/3z3k2619/x86/CMakeFiles/edit_cache.dir
+/Users/lzw/AndroidStudioProjects/simpledlna/camera/.cxx/RelWithDebInfo/3z3k2619/x86/CMakeFiles/ncnnbodypose.dir

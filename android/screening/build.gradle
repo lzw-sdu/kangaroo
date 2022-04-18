@@ -1,0 +1,42 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+    buildToolsVersion buildToolsVersion
+
+}
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "androidx.appcompat:appcompat:$rootProject.ext.supportLibraryVersion"
+    // Cling library
+    api "org.fourthline.cling:cling-core:$rootProject.ext.clingVersion"
+    api "org.fourthline.cling:cling-support:$rootProject.ext.clingVersion"
+
+    // Jetty library
+    api "org.eclipse.jetty:jetty-server:$rootProject.ext.jettyVersion"
+    api "org.eclipse.jetty:jetty-servlet:$rootProject.ext.jettyVersion"
+    api "org.eclipse.jetty:jetty-client:$rootProject.ext.jettyVersion"
+    api "org.slf4j:slf4j-simple:$rootProject.ext.slf4jVersion"
+    api project(':webserver')//本地文件映射的服务器
+    api project(":screenrecorder")//录屏服务
+    implementation 'com.github.pedroSG94.rtmp-rtsp-stream-client-java:rtplibrary:2.1.7'
+    implementation "androidx.core:core-ktx:1.3.2"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation project(path: ':nginxserver')
+}

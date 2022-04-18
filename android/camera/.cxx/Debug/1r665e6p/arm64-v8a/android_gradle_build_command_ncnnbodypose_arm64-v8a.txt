@@ -1,0 +1,7 @@
+Executable : /Users/lzw/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja
+arguments : 
+-C
+/Users/lzw/AndroidStudioProjects/camera_kotlin/app/.cxx/Debug/1r665e6p/arm64-v8a
+ncnnbodypose
+jvmArgs : 
+

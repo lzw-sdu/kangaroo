@@ -1,0 +1,2 @@
+ninja: Entering directory `/Users/lzw/AndroidStudioProjects/MyApplication2/camera/.cxx/Debug/243r314l/arm64-v8a'
+ninja: no work to do.

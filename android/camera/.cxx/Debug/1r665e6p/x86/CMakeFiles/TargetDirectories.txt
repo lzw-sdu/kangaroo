@@ -1,0 +1,3 @@
+/Users/lzw/AndroidStudioProjects/camera_kotlin/app/.cxx/Debug/1r665e6p/x86/CMakeFiles/rebuild_cache.dir
+/Users/lzw/AndroidStudioProjects/camera_kotlin/app/.cxx/Debug/1r665e6p/x86/CMakeFiles/edit_cache.dir
+/Users/lzw/AndroidStudioProjects/camera_kotlin/app/.cxx/Debug/1r665e6p/x86/CMakeFiles/ncnnbodypose.dir

@@ -1,0 +1,5 @@
+# ninja log v5
+0	1029	1648112783	CMakeFiles/ncnnbodypose.dir/ndkcamera.cpp.o	cf0cfb8a57b3a68c
+0	1077	1648112783	CMakeFiles/ncnnbodypose.dir/nanodetncnn.cpp.o	2191c988fa2387dc
+0	1162	1648112783	CMakeFiles/ncnnbodypose.dir/nanodet.cpp.o	776de0bb119d07ca
+1162	2053	1648112784	/Users/lzw/AndroidStudioProjects/MyApplication2/camera/build/intermediates/cxx/Debug/243r314l/obj/arm64-v8a/libncnnbodypose.so	53e91d9137bc5502

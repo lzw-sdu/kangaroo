@@ -1,0 +1,188 @@
+[
+  {
+    "level": "INFO",
+    "message": "Start JSON generation. Platform version: 24 min SDK version: x86",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "Trying to locate CMake in local SDK repository.",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "- CMake found in SDK at \u0027/Users/lzw/Library/Android/sdk/cmake/3.10.2.4988404\u0027 had version \u00273.10.2\u0027",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "CMake \u00273.18.1\u0027 found in SDK did not match requested version \u00273.10.2\u0027.",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "rebuilding JSON /Users/lzw/AndroidStudioProjects/simpledlna/camera/.cxx/cmake/debug/x86/android_gradle_build.json due to:",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "- expected json /Users/lzw/AndroidStudioProjects/simpledlna/camera/.cxx/cmake/debug/x86/android_gradle_build.json file is not present, will remove stale json folder",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "- missing previous command file /Users/lzw/AndroidStudioProjects/simpledlna/camera/.cxx/cmake/debug/x86/build_command.txt, will remove stale json folder",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "- command changed from previous, will remove stale json folder",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "removing stale contents from \u0027/Users/lzw/AndroidStudioProjects/simpledlna/camera/.cxx/cmake/debug/x86\u0027",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "created folder \u0027/Users/lzw/AndroidStudioProjects/simpledlna/camera/.cxx/cmake/debug/x86\u0027",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "executing cmake Executable : /Users/lzw/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake\narguments : \n-H/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni\n-DCMAKE_FIND_ROOT_PATH\u003d/Users/lzw/AndroidStudioProjects/simpledlna/camera/.cxx/cmake/debug/prefab/x86/prefab\n-DCMAKE_BUILD_TYPE\u003dDebug\n-DCMAKE_TOOLCHAIN_FILE\u003d/Users/lzw/Library/Android/sdk/ndk/21.0.6113669/build/cmake/android.toolchain.cmake\n-DANDROID_ABI\u003dx86\n-DANDROID_NDK\u003d/Users/lzw/Library/Android/sdk/ndk/21.0.6113669\n-DANDROID_PLATFORM\u003dandroid-24\n-DCMAKE_ANDROID_ARCH_ABI\u003dx86\n-DCMAKE_ANDROID_NDK\u003d/Users/lzw/Library/Android/sdk/ndk/21.0.6113669\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/Users/lzw/AndroidStudioProjects/simpledlna/camera/build/intermediates/cmake/debug/obj/x86\n-DCMAKE_MAKE_PROGRAM\u003d/Users/lzw/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_SYSTEM_VERSION\u003d24\n-B/Users/lzw/AndroidStudioProjects/simpledlna/camera/.cxx/cmake/debug/x86\n-GNinja\njvmArgs : \n\n",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "\n",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "[\u003d\u003d \"CMake Server\" \u003d\u003d[\n",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"supportedProtocolVersions\":[{\"isExperimental\":true,\"major\":1,\"minor\":1}],\"type\":\"hello\"}\n",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "]\u003d\u003d \"CMake Server\" \u003d\u003d]\n",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\n  \"type\": \"handshake\",\n  \"cookie\": \"gradle-cmake-cookie\",\n  \"protocolVersion\": {\n    \"isExperimental\": true,\n    \"major\": 1,\n    \"minor\": 1\n  },\n  \"sourceDirectory\": \"/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni\",\n  \"buildDirectory\": \"/Users/lzw/AndroidStudioProjects/simpledlna/camera/.cxx/cmake/debug/x86\",\n  \"generator\": \"Ninja\"\n}\n",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"gradle-cmake-cookie\",\"inReplyTo\":\"handshake\",\"type\":\"reply\"}\n",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\n  \"type\": \"configure\",\n  \"cacheArguments\": [\n    \"\",\n    \"-DCMAKE_FIND_ROOT_PATH\\u003d/Users/lzw/AndroidStudioProjects/simpledlna/camera/.cxx/cmake/debug/prefab/x86/prefab\",\n    \"-DCMAKE_BUILD_TYPE\\u003dDebug\",\n    \"-DCMAKE_TOOLCHAIN_FILE\\u003d/Users/lzw/Library/Android/sdk/ndk/21.0.6113669/build/cmake/android.toolchain.cmake\",\n    \"-DANDROID_ABI\\u003dx86\",\n    \"-DANDROID_NDK\\u003d/Users/lzw/Library/Android/sdk/ndk/21.0.6113669\",\n    \"-DANDROID_PLATFORM\\u003dandroid-24\",\n    \"-DCMAKE_ANDROID_ARCH_ABI\\u003dx86\",\n    \"-DCMAKE_ANDROID_NDK\\u003d/Users/lzw/Library/Android/sdk/ndk/21.0.6113669\",\n    \"-DCMAKE_EXPORT_COMPILE_COMMANDS\\u003dON\",\n    \"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\\u003d/Users/lzw/AndroidStudioProjects/simpledlna/camera/build/intermediates/cmake/debug/obj/x86\",\n    \"-DCMAKE_MAKE_PROGRAM\\u003d/Users/lzw/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja\",\n    \"-DCMAKE_SYSTEM_NAME\\u003dAndroid\",\n    \"-DCMAKE_SYSTEM_VERSION\\u003d24\"\n  ]\n}\n",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working C compiler: /Users/lzw/Library/Android/sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang\",\"type\":\"message\"}\n",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "Check for working C compiler: /Users/lzw/Library/Android/sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":33,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working C compiler: /Users/lzw/Library/Android/sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang -- broken\",\"type\":\"message\"}\n",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "Check for working C compiler: /Users/lzw/Library/Android/sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang -- broken",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"CMake Error at /Users/lzw/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCCompiler.cmake:52 (message):\\n  The C compiler\\n\\n    \\\"/Users/lzw/Library/Android/sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang\\\"\\n\\n  is not able to compile a simple test program.\\n\\n  It fails with the following output:\\n\\n    Change Dir: /Users/lzw/AndroidStudioProjects/simpledlna/camera/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp\\n    \\n    Run Build Command:\\\"/Users/lzw/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja\\\" \\\"cmTC_75a24\\\"\\n    [1/2] Building C object CMakeFiles/cmTC_75a24.dir/testCCompiler.c.o\\n    FAILED: CMakeFiles/cmTC_75a24.dir/testCCompiler.c.o \\n    /Users/lzw/Library/Android/sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target\u003di686-none-linux-android24 --gcc-toolchain\u003d/Users/lzw/Library/Android/sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot\u003d/Users/lzw/Library/Android/sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE\u003d2 -Wformat -Werror\u003dformat-security   -fPIE -o CMakeFiles/cmTC_75a24.dir/testCCompiler.c.o   -c testCCompiler.c\\n    ninja: build stopped: subcommand failed.\\n    \\n\\n  \\n\\n  CMake will not be able to correctly generate this project.\\nCall Stack (most recent call first):\\n  CMakeLists.txt:1 (project)\\n\\n\",\"title\":\"Error\",\"type\":\"message\"}\n",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "ERROR",
+    "message": "CMake Error at /Users/lzw/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCCompiler.cmake:52 (message):\n  The C compiler\n\n    \"/Users/lzw/Library/Android/sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang\"\n\n  is not able to compile a simple test program.\n\n  It fails with the following output:\n\n    Change Dir: /Users/lzw/AndroidStudioProjects/simpledlna/camera/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp\n    \n    Run Build Command:\"/Users/lzw/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja\" \"cmTC_75a24\"\n    [1/2] Building C object CMakeFiles/cmTC_75a24.dir/testCCompiler.c.o\n    FAILED: CMakeFiles/cmTC_75a24.dir/testCCompiler.c.o \n    /Users/lzw/Library/Android/sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target\u003di686-none-linux-android24 --gcc-toolchain\u003d/Users/lzw/Library/Android/sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot\u003d/Users/lzw/Library/Android/sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE\u003d2 -Wformat -Werror\u003dformat-security   -fPIE -o CMakeFiles/cmTC_75a24.dir/testCCompiler.c.o   -c testCCompiler.c\n    ninja: build stopped: subcommand failed.\n    \n\n  \n\n  CMake will not be able to correctly generate this project.\nCall Stack (most recent call first):\n  CMakeLists.txt:1 (project)\n",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":1000,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Configuring incomplete, errors occurred!\\nSee also \\\"/Users/lzw/AndroidStudioProjects/simpledlna/camera/.cxx/cmake/debug/x86/CMakeFiles/CMakeOutput.log\\\".\\nSee also \\\"/Users/lzw/AndroidStudioProjects/simpledlna/camera/.cxx/cmake/debug/x86/CMakeFiles/CMakeError.log\\\".\",\"type\":\"message\"}\n",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "Configuring incomplete, errors occurred!\nSee also \"/Users/lzw/AndroidStudioProjects/simpledlna/camera/.cxx/cmake/debug/x86/CMakeFiles/CMakeOutput.log\".\nSee also \"/Users/lzw/AndroidStudioProjects/simpledlna/camera/.cxx/cmake/debug/x86/CMakeFiles/CMakeError.log\".",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"errorMessage\":\"Configuration failed.\",\"inReplyTo\":\"configure\",\"type\":\"error\"}\n",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "ERROR",
+    "message": "Configuration failed.",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "JSON generation completed with problem. Exception: com.android.ide.common.process.ProcessException: Error configuring CMake server (/Users/lzw/Library/Android/sdk/cmake/3.10.2.4988404/bin).\r\nCheck for working C compiler: /Users/lzw/Library/Android/sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang\nCheck for working C compiler: /Users/lzw/Library/Android/sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang -- broken\nCMake Error at /Users/lzw/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCCompiler.cmake:52 (message):\n  The C compiler\n\n    \"/Users/lzw/Library/Android/sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang\"\n\n  is not able to compile a simple test program.\n\n  It fails with the following output:\n\n    Change Dir: /Users/lzw/AndroidStudioProjects/simpledlna/camera/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp\n    \n    Run Build Command:\"/Users/lzw/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja\" \"cmTC_75a24\"\n    [1/2] Building C object CMakeFiles/cmTC_75a24.dir/testCCompiler.c.o\n    FAILED: CMakeFiles/cmTC_75a24.dir/testCCompiler.c.o \n    /Users/lzw/Library/Android/sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target\u003di686-none-linux-android24 --gcc-toolchain\u003d/Users/lzw/Library/Android/sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot\u003d/Users/lzw/Library/Android/sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE\u003d2 -Wformat -Werror\u003dformat-security   -fPIE -o CMakeFiles/cmTC_75a24.dir/testCCompiler.c.o   -c testCCompiler.c\n    ninja: build stopped: subcommand failed.\n    \n\n  \n\n  CMake will not be able to correctly generate this project.\nCall Stack (most recent call first):\n  CMakeLists.txt:1 (project)\n\n\nConfiguring incomplete, errors occurred!\nSee also \"/Users/lzw/AndroidStudioProjects/simpledlna/camera/.cxx/cmake/debug/x86/CMakeFiles/CMakeOutput.log\".\nSee also \"/Users/lzw/AndroidStudioProjects/simpledlna/camera/.cxx/cmake/debug/x86/CMakeFiles/CMakeError.log\".\n",
+    "file": "/Users/lzw/AndroidStudioProjects/simpledlna/camera/src/main/jni/CMakeLists.txt",
+    "tag": "debug|x86"
+  }
+]

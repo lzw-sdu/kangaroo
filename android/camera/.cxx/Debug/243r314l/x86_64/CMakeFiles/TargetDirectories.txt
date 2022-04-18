@@ -1,0 +1,3 @@
+/Users/lzw/AndroidStudioProjects/MyApplication2/camera/.cxx/Debug/243r314l/x86_64/CMakeFiles/rebuild_cache.dir
+/Users/lzw/AndroidStudioProjects/MyApplication2/camera/.cxx/Debug/243r314l/x86_64/CMakeFiles/edit_cache.dir
+/Users/lzw/AndroidStudioProjects/MyApplication2/camera/.cxx/Debug/243r314l/x86_64/CMakeFiles/ncnnbodypose.dir

@@ -1,0 +1,3 @@
+/Users/lzw/AndroidStudioProjects/kangaroo/android/camera/.cxx/RelWithDebInfo/1s432m31/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/Users/lzw/AndroidStudioProjects/kangaroo/android/camera/.cxx/RelWithDebInfo/1s432m31/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/lzw/AndroidStudioProjects/kangaroo/android/camera/.cxx/RelWithDebInfo/1s432m31/arm64-v8a/CMakeFiles/ncnnbodypose.dir
