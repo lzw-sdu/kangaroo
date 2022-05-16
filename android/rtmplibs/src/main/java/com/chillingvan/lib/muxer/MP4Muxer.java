@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 
 /**
- * Created by Chilling on 2017/12/17.
+ *
  */
 
 public class MP4Muxer extends BaseMuxer {

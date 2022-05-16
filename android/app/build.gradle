@@ -41,12 +41,18 @@ android {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "com.sdu.kangaroo"
         minSdkVersion 24
-        targetSdkVersion flutter.targetSdkVersion
+        targetSdkVersion 28
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
 
     signingConfigs {
+        debug {
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+        }
         release {
             keyAlias keystoreProperties['keyAlias']
             keyPassword keystoreProperties['keyPassword']
@@ -67,6 +73,10 @@ android {
 //            signingConfig signingConfigs.debug
             signingConfig signingConfigs.release
         }
+
+        debug {
+            signingConfig signingConfigs.release
+        }
     }
 
 }
@@ -77,7 +87,9 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.5'
     implementation project(path: ':screening')
     implementation project(path: ':simplepermission')
-    implementation project(path: ':dance_ui')
+    implementation project(path: ':dance')
+    implementation project(path: ':healthy')
+    implementation project(path: ':app_ptag')
     compileOnly files("$flutterRoot/bin/cache/artifacts/engine/android-arm/flutter.jar")
 }
 

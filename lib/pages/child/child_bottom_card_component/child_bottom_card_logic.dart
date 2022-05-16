@@ -74,7 +74,9 @@ class ChildBottomCardLogic extends GetxController {
       log('传入index异常', name: 'ChildBottomCardLogic.jumpTo');
       return;
     }
-    state.index = index;
+    if (state.index != index) {
+      state.index = index;
+    }
     update();
   }
 }

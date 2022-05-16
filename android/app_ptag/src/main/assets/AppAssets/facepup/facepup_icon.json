@@ -1,0 +1,138 @@
+{
+  "iconMap": {
+    "LR_chin_jnt": [
+      "icon_drawer_male_chin",
+      "icon_drawer_female_chin"
+    ],
+    "upperLip_jnt": [
+      "icon_drawer_middle_lip_up"
+    ],
+    "LR_noseWing_jnt": [
+      "icon_drawer_nosewing"
+    ],
+    "LR_lowerEyeLidOut_jnt": [
+      "icon_drawer_lower_eyelid_outside"
+    ],
+    "LR_upperEyeLid_jnt": [
+      "icon_drawer_upper_eyelid_mid"
+    ],
+    "nose_jnt": [
+      "icon_drawer_nose"
+    ],
+    "LR_upperLip_jnt": [
+      "icon_drawer_upper_lip"
+    ],
+    "LR_cheekUp_jnt": [
+      "icon_drawer_male_cheek",
+      "icon_drawer_female_cheek"
+    ],
+    "LR_mandible_jnt": [
+      "icon_drawer_male_mandible",
+      "icon_drawer_female_mandible"
+    ],
+    "LR_innBrow_jnt": [
+      "icon_drawer_eyebrow(1)"
+    ],
+    "LR_malar_jnt": [
+      "icon_drawer_male_temple",
+      "icon_drawer_female_temple"
+    ],
+    "LR_cheek_jnt": [
+      "icon_drawer_male_cheekbone",
+      "icon_drawer_female_cheekbone"
+    ],
+    "LR_levator_jnt": [
+      "icon_drawer_male_masseter",
+      "icon_drawer_female_masseter"
+    ],
+    "mouth_root_jnt": [
+      "icon_drawer_male_lower_face",
+      "icon_drawer_female_lower_face"
+    ],
+    "LR_upperEyeLidOut_jnt": [
+      "icon_drawer_upper_eyelid_outside"
+    ],
+    "noseBridgeUp_jnt": [
+      "icon_drawer_root"
+    ],
+    "UL_Lip_jnt": [
+      "icon_drawer_middle_lip_up"
+    ],
+    "noseHead_jnt": [
+      "icon_drawer_head_of_nose"
+    ],
+    "LR_lipInner_jnt": [
+      "icon_drawer_corner_of_mouth"
+    ],
+    "lowerLip_jnt": [
+      "icon_drawer_middle_lip_down"
+    ],
+    "forehead_jnt": [
+      "icon_drawer_male_forehead",
+      "icon_drawer_female_forehead"
+    ],
+    "LR_mandibleCape_jnt": [
+      "icon_drawer_male_mandibular_angle",
+      "icon_drawer_female_mandibular_angle"
+    ],
+    "ophryon_jnt": [
+      "icon_male_drawer_ophryon",
+      "icon_drawer_female_ophryon"
+    ],
+    "LR_interEyeLid_jnt": [
+      "icon_drawer_eye_inner"
+    ],
+    "LR_lowerEyeLidIn_jnt": [
+      "icon_drawer_lower_eyelid_inner"
+    ],
+    "LR_outBrow_jnt": [
+      "icon_drawer_eyebrow(3)"
+    ],
+    "LR_brow_jnt": [
+      "icon_drawer_eyebrow"
+    ],
+    "mouth_jnt": [
+      "icon_drawer_mouth"
+    ],
+    "mouthDn_jnt": [
+      "icon_drawer_mentolabial_sulcus"
+    ],
+    "LR_lowerLip_jnt": [
+      "icon_drawer_lower_lip"
+    ],
+    "LR_philtrum_jnt": [
+      "icon_drawer_side_of_nose"
+    ],
+    "LR_midBrow_jnt": [
+      "icon_drawer_eyebrow(2)"
+    ],
+    "LR_lowerEyeLid_jnt": [
+      "icon_drawer_lower_eyelid_mid"
+    ],
+    "LR_pupil_jnt": [
+      "icon_drawer_lower_eyelid_inner(1)"
+    ],
+    "noseBridge_jnt": [
+      "icon_drawer_bridge"
+    ],
+    "LR_lipDown_jnt": [
+      "icon_drawer_corner_of_mouth_small"
+    ],
+    "LR_outerEyeLid_jnt": [
+      "icon_drawer_eye_outside"
+    ],
+    "LR_upperEyeLidIn_jnt": [
+      "icon_drawer_upper_eyelid_inner"
+    ],
+    "LR_eye_jnt": [
+      "icon_drawer_eye"
+    ],
+    "noseBottom_jnt": [
+      "icon_drawer_base_of_nose"
+    ],
+    "chin_jnt": [
+      "icon_drawer_male_chin_tip",
+      "icon_drawer_female_chin_tip"
+    ]
+  }
+}

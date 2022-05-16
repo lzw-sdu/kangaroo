@@ -1,0 +1,81 @@
+ext.deps = [:]
+
+/**
+ * 版本
+ */
+def build_versions = [:]
+build_versions.min_sdk = 21
+build_versions.target_sdk = 30
+build_versions.compile_sdk = 30
+build_versions.build_tools = "30.0.3"
+build_versions.version_code = 1
+build_versions.version_name = "1.0.0"
+ext.build_versions = build_versions
+
+/**
+ * 基础
+ */
+def versions = [:]
+versions.app_compat = "1.2.0"
+versions.support = "1.1.0"
+versions.kotlin_version = "1.5.0"
+versions.kotlin_core_version = "1.3.2"
+versions.design = "1.4.0"
+ext.versions = versions
+/**
+ * FaceUnity
+ */
+versions.core = "1.0.6-beta-2"
+versions.factory = "1.2.2"
+versions.toolbox = "1.0.7"
+versions.download  = "1.0.5"
+versions.sta  = "1.0.1"
+
+/**
+ * 三方
+ */
+versions.glide = "4.11.0"
+versions.exoplayer_version = "2.11.3"
+versions.gson_version = "2.8.6"
+versions.lifecycle = "2.0.0"
+
+/**
+ * 三方
+ */
+def deps = [:]
+deps.kotlin = "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin_version"
+deps.kotlin_core = "androidx.core:core-ktx:$versions.kotlin_core_version"
+deps.glide = "com.github.bumptech.glide:glide:$versions.glide"
+deps.exoplayer = "com.google.android.exoplayer:exoplayer-core:$versions.exoplayer_version"
+deps.gson = "com.google.code.gson:gson:$versions.gson_version"
+ext.deps = deps
+
+/**
+ * support
+ */
+def support = [:]
+support.app_compat = "androidx.appcompat:appcompat:$versions.app_compat"
+support.recyclerview = "androidx.recyclerview:recyclerview:$versions.support"
+support.design = "com.google.android.material:material:$versions.design"
+deps.support = support
+
+/**
+ * FaceUnity
+ */
+def faceUnity = [:]
+faceUnity.core = "com.faceunity.gpb:core:$versions.core"
+faceUnity.factory = "com.faceunity.gpb:avatar-factory:$versions.factory"
+faceUnity.toolbox = "com.faceunity.gpb:toolbox:$versions.toolbox"
+faceUnity.download = "com.faceunity.gpb:download:$versions.download"
+faceUnity.sta = "com.faceunity.gpb:sta:$versions.sta"
+deps.faceUnity = faceUnity
+
+
+/**
+ * lifecycle
+ */
+def lifecycle = [:]
+lifecycle.livedata = "androidx.lifecycle:lifecycle-livedata:$versions.lifecycle"
+lifecycle.extensions = "androidx.lifecycle:lifecycle-extensions:$versions.lifecycle"
+deps.lifecycle = lifecycle
+

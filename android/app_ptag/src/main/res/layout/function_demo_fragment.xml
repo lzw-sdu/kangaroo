@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.function_demo.FunctionDemoFragment">
+
+    <com.faceunity.core.weight.GLTextureView
+        android:id="@+id/gl_texture_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/scene_bg"
+        />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <Button
+                android:id="@+id/remove_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="移除相机"
+                />
+            <Button
+                android:id="@+id/set_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="直接设置相机"
+                />
+            <Button
+                android:id="@+id/set_camera_by_data_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置相机"
+                />
+            <Button
+                android:id="@+id/remove_animation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="移除动画"
+                />
+            <Button
+                android:id="@+id/set_animation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="直接设置动画"
+                />
+            <Button
+                android:id="@+id/set_animation_by_scene_config"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通过 scene_list 设置动画"
+                />
+            <Button
+                android:id="@+id/set_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置背景 Bundle"
+                />
+            <Button
+                android:id="@+id/set_background_by_executor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通过执行器设置背景 Bundle"
+                />
+            <Button
+                android:id="@+id/open_origin_facepup_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="原始的捏脸"
+                />
+
+            <Button
+                android:id="@+id/open_tier_facepup_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有层级菜单的捏脸"
+                />
+            <Button
+                android:id="@+id/set_bundle_then_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="异步设置保存"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.faceunity.fupta.facepup.weight.FacePupTierControlView
+        android:id="@+id/face_pup_tier_control_view"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        />
+
+    <com.faceunity.fupta.facepup.weight.FacePupOriginControlView
+        android:id="@+id/face_pup_origin_control_view"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        />
+
+</FrameLayout>

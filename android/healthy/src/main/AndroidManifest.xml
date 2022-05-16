@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sdu.kangaroo.healthy">
+
+    <queries>
+        <package android:name="com.heytap.market" />
+        <package android:name="com.oppo.market" />
+    </queries>
+
+    <queries>
+        <package android:name="com.heytap.health" />
+    </queries>
+
+</manifest>

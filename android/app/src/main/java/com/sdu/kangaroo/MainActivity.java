@@ -1,13 +1,16 @@
 package com.sdu.kangaroo;
 
 import android.content.Intent;
+import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
+import com.faceunity.app_ptag.FuDevInitializeWrapper;
 import com.sdu.kangaroo.handler.DLNAHandler;
 import com.sdu.kangaroo.handler.DanceHandler;
 import com.sdu.kangaroo.utils.start_avtivity_result.StartActivityManger;
-import com.ykbjson.lib.simplepermission.PermissionsManager;
+import com.sdu.kangaroo.simplepermission.PermissionsManager;
 
 import io.flutter.embedding.android.FlutterActivity;
 import io.flutter.embedding.engine.FlutterEngine;
@@ -17,7 +20,16 @@ import io.flutter.plugins.GeneratedPluginRegistrant;
 public class MainActivity extends FlutterActivity {
     private static final String DLNA_CHANNEL = "com.sdu.kangaroo/dlna";
     private static final String DANCE_CHANNEL = "com.sdu.kangaroo/dance";
+    private static final String DEVICE_CHANNEL = "com.sdu.kangaroo/device";
     public static final int CODE_REQUEST_MEDIA = 1011;
+
+    public static MethodChannel deviceChannel;
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        FuDevInitializeWrapper.INSTANCE.initSDK(this);
+    }
 
     /**
      * Hook for subclasses to easily configure a {@code FlutterEngine}.
@@ -39,7 +51,10 @@ public class MainActivity extends FlutterActivity {
         GeneratedPluginRegistrant.registerWith(flutterEngine);
         new MethodChannel(flutterEngine.getDartExecutor().getBinaryMessenger(), DLNA_CHANNEL).setMethodCallHandler(DLNAHandler.Companion.getInstance(this));
         new MethodChannel(flutterEngine.getDartExecutor().getBinaryMessenger(), DANCE_CHANNEL).setMethodCallHandler(DanceHandler.Companion.getInstance(this));
+        deviceChannel = new MethodChannel(flutterEngine.getDartExecutor().getBinaryMessenger(), "com.sdu.kangaroo/device");
+
     }
+
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {

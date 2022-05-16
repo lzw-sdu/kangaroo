@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ActivityBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
+    </style>
+
+    <style name="FullScreenTheme" parent="ActivityBaseTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
+    </style>
+
+    <style name="GuideTheme" parent="FullScreenTheme">
+        <item name="android:windowBackground">@drawable/portrait</item>
+    </style>
+
+    <style name="fu_demo_edit_setting_bottom_sheet_list_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="background">?android:attr/selectableItemBackground</item>
+    </style>
+    <style name="fu_demo_edit_setting_bottom_sheet_list_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#27272B</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_marginStart">16sp</item>
+    </style>
+
+    <style name="fu_demo_edit_setting_bottom_sheet_list_function_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_marginEnd">16sp</item>
+    </style>
+
+    <style name="fu_demo_edit_setting_bottom_sheet_list_function_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">#27272B</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="FuBaseDialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

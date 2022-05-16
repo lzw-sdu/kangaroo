@@ -34,8 +34,16 @@ class SignUpLogic extends GetxController {
     //TODO: 发送验证码
     _decreaseCount();
     Fluttertoast.showToast(
-      msg: "验证码已发送",
+      msg: "服务器请求异常，请稍后再试",
     );
+  }
+
+  Future signUp() async{
+    Timer(Duration(seconds: 1), (){
+      Fluttertoast.showToast(
+        msg: "服务器请求异常，请稍后再试",
+      );
+    });
   }
 
   @override

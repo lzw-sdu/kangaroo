@@ -1,5 +1,9 @@
+import 'dart:async';
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
 import 'package:kangaroo/widgets/common_card_widgets.dart';
 
@@ -75,7 +79,11 @@ class ParentHomePage extends StatelessWidget {
                               ))
                         ])),
                   ),
-                  ElevatedButton(onPressed: () {}, child: Text('查看昨日运动分析报告')),
+                  ElevatedButton(onPressed: () {
+                    Timer(Duration(seconds: 1), () {
+                      Fluttertoast.showToast(msg: "服务器连接失败");
+                    });
+                  }, child: Text('查看昨日运动分析报告')),
                   Padding(padding: EdgeInsets.symmetric(vertical: 12.h)),
                   Expanded(
                     child: CommonCardWidgets.bottomCard(
@@ -95,7 +103,7 @@ class ParentHomePage extends StatelessWidget {
                                   ),
                                   nodeName: '初级民族舞',
                                   videoName: '《草原小骏马》',
-                                  topIcon: "暂定",
+                                  topIcon: "assets/image/test1.png",
                                   buttonAction:
                                       logic.modifyDancePlanButtonAction),
                               _itemCard(
@@ -104,9 +112,9 @@ class ParentHomePage extends StatelessWidget {
                                     width: 140.w,
                                     height: 45.h,
                                   ),
-                                  nodeName: '初级羽毛球',
-                                  videoName: '高远球接球动作',
-                                  topIcon: "暂定",
+                                  nodeName: logic.nodeName,
+                                  videoName: logic.videoName,
+                                  topIcon: logic.imagePath,
                                   buttonAction:
                                       logic.modifySportPlanButtonAction),
                             ],
@@ -159,8 +167,11 @@ Widget _itemCard(
                 Expanded(
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Colors.red,
                       borderRadius: BorderRadius.all(Radius.circular(4)),
+                    ),
+                    child: Image.asset(
+                      topIcon,
+                      fit: BoxFit.fill,
                     ),
                   ),
                   flex: 1,
@@ -197,7 +208,7 @@ Widget _itemCard(
                             flex: 1,
                           ),
                           ElevatedButton(
-                            onPressed: () => buttonAction,
+                            onPressed: () => buttonAction(),
                             child: Text(
                               '修改计划',
                               style: TextStyle(
@@ -205,10 +216,10 @@ Widget _itemCard(
                             ),
                             style: ButtonStyle(
                               backgroundColor:
-                              MaterialStateProperty.resolveWith<Color?>(
+                                  MaterialStateProperty.resolveWith<Color?>(
                                       (Set<MaterialState> states) {
-                                    return Get.theme.colorScheme.tertiary;
-                                  }),
+                                return Get.theme.colorScheme.tertiary;
+                              }),
                             ),
                           ),
                         ],

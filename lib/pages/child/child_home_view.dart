@@ -121,7 +121,7 @@ class ChildHomePage extends StatelessWidget {
                 ),
                 children: [
                   TextSpan(
-                    text: '25',
+                    text: '50',
                     style: TextStyle(
                       // letterSpacing: 2,
                       fontSize: 60.sp,
@@ -132,7 +132,7 @@ class ChildHomePage extends StatelessWidget {
                 ])),
             Padding(padding: EdgeInsets.symmetric(vertical: 6.h)),
             Text(
-              '已经点亮任务点x个',
+              '已经点亮任务点2个',
               style: TextStyle(
                 color: Get.theme.colorScheme.onPrimary,
                 fontSize: 12.sp,

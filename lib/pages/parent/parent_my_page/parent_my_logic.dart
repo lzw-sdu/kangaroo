@@ -1,4 +1,7 @@
 import 'package:get/get.dart';
+import 'package:kangaroo/channel/method_channel/dance_channel.dart';
+import 'package:kangaroo/pages/parent/parent_my_page/parent_cartoon_generate_page/parent_cartoon_generate_view.dart';
+import 'package:kangaroo/pages/parent/parent_my_page/parent_history_page/parent_history_view.dart';
 import 'package:kangaroo/utils/image_assets.dart';
 
 import 'parent_my_state.dart';
@@ -25,10 +28,15 @@ class ParentMyLogic extends GetxController {
         'title': '我的收藏',
         'action': _jumpToMyFavorite
       },
+      // {
+      //   'icon': ImageAssets.TRANSCRIBE_LOGO,
+      //   'title': '录制手机摆放指南',
+      //   'action': _jumpToGuide
+      // },
       {
         'icon': ImageAssets.TRANSCRIBE_LOGO,
-        'title': '录制手机摆放指南',
-        'action': _jumpToGuide
+        'title': '镜像卡通人物舞伴',
+        'action': _jumpToMirror
       },
     ];
   }
@@ -45,11 +53,19 @@ class ParentMyLogic extends GetxController {
     super.onClose();
   }
 
-  void _jumpToHistory() {}
+  void _jumpToHistory() {
+    Get.to(ParentHistoryPage());
+  }
 
-  void _jumpToVideoGenerate() {}
+  void _jumpToVideoGenerate() {
+    Get.to(ParentCartoonGeneratePage());
+  }
 
   void _jumpToMyFavorite() {}
 
   void _jumpToGuide() {}
+
+  void _jumpToMirror() {
+    DanceMethodChanel().navigateToMirrorUI();
+  }
 }

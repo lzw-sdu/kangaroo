@@ -9,21 +9,22 @@ import android.util.Base64
 import android.util.Log
 import android.widget.Toast
 import androidx.core.content.PermissionChecker.checkCallingOrSelfPermission
+import com.sdu.kangaroo.MainActivity
 import com.sdu.kangaroo.MethodChannelStrategy
 import com.sdu.kangaroo.strategy.dlna.DLNAConnectStrategy
 import com.sdu.kangaroo.strategy.dlna.DLNAFindDeviceStrategy
 import com.sdu.kangaroo.strategy.dlna.DLNASelectModeStrategy
 import com.sdu.kangaroo.utils.SingletonHolder
-import com.ykbjson.lib.screening.DLNAManager
-import com.ykbjson.lib.screening.DLNAPlayer
-import com.ykbjson.lib.screening.bean.DeviceInfo
-import com.ykbjson.lib.screening.bean.MediaInfo
-import com.ykbjson.lib.screening.listener.DLNAControlCallback
-import com.ykbjson.lib.screening.listener.DLNADeviceConnectListener
-import com.ykbjson.lib.screening.listener.DLNARegistryListener
-import com.ykbjson.lib.screening.listener.DLNAStateCallback
-import com.ykbjson.lib.simplepermission.PermissionsManager
-import com.ykbjson.lib.simplepermission.PermissionsRequestCallback
+import com.sdu.kangaroo.screening.DLNAManager
+import com.sdu.kangaroo.screening.DLNAPlayer
+import com.sdu.kangaroo.screening.bean.DeviceInfo
+import com.sdu.kangaroo.screening.bean.MediaInfo
+import com.sdu.kangaroo.screening.listener.DLNAControlCallback
+import com.sdu.kangaroo.screening.listener.DLNADeviceConnectListener
+import com.sdu.kangaroo.screening.listener.DLNARegistryListener
+import com.sdu.kangaroo.screening.listener.DLNAStateCallback
+import com.sdu.kangaroo.simplepermission.PermissionsManager
+import com.sdu.kangaroo.simplepermission.PermissionsRequestCallback
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import org.fourthline.cling.model.action.ActionInvocation
@@ -39,6 +40,7 @@ class DLNAHandler private constructor(val mContext: Context) : DLNADeviceConnect
 
     var mDeviceInfo: DeviceInfo? = null
     var mDLNAPlayer: DLNAPlayer? = null
+    var deviceList: List<DeviceInfo> = mutableListOf()
     private var mDLNARegistryListener: DLNARegistryListener? = null
 
     private val methodMap: MutableMap<String, out MethodChannelStrategy> = hashMapOf(
@@ -135,7 +137,9 @@ class DLNAHandler private constructor(val mContext: Context) : DLNADeviceConnect
         mDLNAPlayer!!.setConnectListener(this)
         mDLNARegistryListener = object : DLNARegistryListener() {
             override fun onDeviceChanged(deviceInfoList: List<DeviceInfo>) {
-                //TODO： 设备数量变更通知
+                deviceList = deviceInfoList
+                val deviceList: List<String> = deviceInfoList.map { it.name }
+                MainActivity.deviceChannel.invokeMethod("onDeviceChanged", deviceList)
             }
         }
         DLNAManager.getInstance().registerListener(mDLNARegistryListener)
@@ -145,9 +149,9 @@ class DLNAHandler private constructor(val mContext: Context) : DLNADeviceConnect
      * 开始播放
      */
     private fun startPlay() {
-        val sourceUrl = mMediaPath!!
+        val sourceUrl = mMediaPath
         val mediaInfo = MediaInfo()
-        if (!TextUtils.isEmpty(sourceUrl)) {
+        if (sourceUrl != null && !TextUtils.isEmpty(sourceUrl)) {
             mediaInfo.mediaId = Base64.encodeToString(sourceUrl.toByteArray(), Base64.NO_WRAP)
             mediaInfo.uri = sourceUrl
         }

@@ -1,7 +1,7 @@
 package com.chillingvan.lib.muxer;
 
 /**
- * Created by Chilling on 2017/5/29.
+ *
  */
 public class TimeIndexCounter {
     private long lastTimeUs;

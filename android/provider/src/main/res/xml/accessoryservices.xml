@@ -1,0 +1,66 @@
+<profiles>
+    <provider
+        name="grpctest_provider1"
+        connectionType="BT|BLE|WIFI"
+        impl="com.example.grpctest.SimpleCallProvider"
+        limit="ANY"
+        timeout="10"
+        urn="icdf.service1:1.0">
+        <channel
+            id="104"
+            priority="low"
+            reliability="disable" />
+        <channel
+            id="110"
+            priority="low"
+            reliability="disable" />
+    </provider>
+    <provider
+        name="grpctest_provider2"
+        connectionType="BT|BLE|WIFI"
+        impl="com.example.grpctest.StateCallProvider"
+        limit="ANY"
+        timeout="10"
+        urn="icdf.service2:1.0">
+        <channel
+            id="104"
+            priority="low"
+            reliability="disable" />
+        <channel
+            id="110"
+            priority="low"
+            reliability="disable" />
+    </provider>
+    <provider
+        name="grpctest_provider3"
+        connectionType="BT|BLE|WIFI"
+        impl="com.example.grpctest.HearthCallProvider"
+        limit="ANY"
+        timeout="10"
+        urn="icdf.service3:1.0">
+        <channel
+            id="104"
+            priority="low"
+            reliability="disable" />
+        <channel
+            id="110"
+            priority="low"
+            reliability="disable" />
+    </provider>
+    <provider
+        name="grpctest_provider4"
+        connectionType="BT|BLE|WIFI"
+        impl="com.example.grpctest.ChatCallProvider"
+        limit="ANY"
+        timeout="10"
+        urn="icdf.service4:1.0">
+        <channel
+            id="104"
+            priority="low"
+            reliability="disable" />
+        <channel
+            id="110"
+            priority="low"
+            reliability="disable" />
+    </provider>
+</profiles>

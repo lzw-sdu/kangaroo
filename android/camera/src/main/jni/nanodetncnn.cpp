@@ -159,7 +159,7 @@ JNIEXPORT void JNI_OnUnload(JavaVM *vm, void *reserved) {
 
 // public native boolean loadModel(AssetManager mgr, int modelid, int cpugpu);
 JNIEXPORT jboolean JNICALL
-Java_com_example_camera_1kotlin_NcnnBodypose_loadModel(JNIEnv *env, jobject thiz,
+Java_com_sdu_kangaroo_NcnnBodypose_loadModel(JNIEnv *env, jobject thiz,
                                                      jobject assetManager, jint modelid,
                                                      jint cpugpu) {
     //modelid目前只支持1、2
@@ -394,7 +394,7 @@ cv::Mat on_image(const unsigned char *nv21, int nv21_width, int nv21_height) {
 // java函数实现
 // public native boolean openCamera(int facing);
 JNIEXPORT jboolean JNICALL
-Java_com_example_camera_1kotlin_NcnnBodypose_openCamera(JNIEnv *env, jobject thiz, jint facing) {
+Java_com_sdu_kangaroo_NcnnBodypose_openCamera(JNIEnv *env, jobject thiz, jint facing) {
     if (facing < 0 || facing > 1)
         return JNI_FALSE;
 
@@ -407,7 +407,7 @@ Java_com_example_camera_1kotlin_NcnnBodypose_openCamera(JNIEnv *env, jobject thi
 
 // public native boolean closeCamera();
 JNIEXPORT jboolean JNICALL
-Java_com_example_camera_1kotlin_NcnnBodypose_closeCamera(JNIEnv *env, jobject thiz) {
+Java_com_sdu_kangaroo_NcnnBodypose_closeCamera(JNIEnv *env, jobject thiz) {
     __android_log_print(ANDROID_LOG_DEBUG, "ncnn", "closeCamera");
 
     g_camera->close();
@@ -417,7 +417,7 @@ Java_com_example_camera_1kotlin_NcnnBodypose_closeCamera(JNIEnv *env, jobject th
 
 // public native boolean setOutputWindow(Surface surface);
 JNIEXPORT jboolean JNICALL
-Java_com_example_camera_1kotlin_NcnnBodypose_setOutputWindow(JNIEnv *env, jobject thiz,
+Java_com_sdu_kangaroo_NcnnBodypose_setOutputWindow(JNIEnv *env, jobject thiz,
                                                            jobject surface) {
     ANativeWindow *win = ANativeWindow_fromSurface(env, surface);
 
@@ -428,7 +428,7 @@ Java_com_example_camera_1kotlin_NcnnBodypose_setOutputWindow(JNIEnv *env, jobjec
     return JNI_TRUE;
 }
 JNIEXPORT jdoubleArray JNICALL
-Java_com_example_camera_1kotlin_NcnnBodypose_detectPose(JNIEnv *env, jobject thiz, jbyteArray data) {
+Java_com_sdu_kangaroo_NcnnBodypose_detectPose(JNIEnv *env, jobject thiz, jbyteArray data) {
     int len = env->GetArrayLength(data);
     unsigned char *buf = new unsigned char[len];
     env->GetByteArrayRegion(data, 0, len, reinterpret_cast<jbyte *>(buf));

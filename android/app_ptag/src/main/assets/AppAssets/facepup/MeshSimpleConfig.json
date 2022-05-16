@@ -1,0 +1,232 @@
+{
+    "menuTree": {
+        "face" :[
+            {
+                "name":"mouth_root_jnt",
+                "showSlider":["sy","sz","sx"]
+            },
+            {
+                "name":"forehead_jnt",
+                "showSlider":["ty","tz","sx"]
+            },
+            {
+                "name":"LR_cheek_jnt",
+                "showSlider":["tx","ty","tz"]
+            },
+            {
+                "name":"LR_cheekUp_jnt",
+                "showSlider":["tx","ty","tz"]
+            },
+            {
+                "name":"LR_levator_jnt",
+                "showSlider":["tx","ty","tz"]
+            },
+            {
+                "name":"LR_chin_jnt",
+                "showSlider":["tz","tx","sz"]
+            },
+            {
+                "name":"LR_mandible_jnt",
+                "showSlider":["sx","sy","tz"]
+            },
+            {
+                "name":"LR_mandibleCape_jnt",
+                "showSlider":["tx","ty","tz"]
+            }
+        ],
+        "nose" :[
+            {
+                "name":"nose_jnt",
+                "showSlider":["ty","tz","sx"]
+            },
+            {
+                "name":"noseBridgeUp_jnt",
+                "showSlider":["sy","sz","sz"]
+            },
+            {
+                "name":"noseHead_jnt",
+                "showSlider":["ty","tz","sz"]
+            }
+        ],
+        "brow" :[
+            {
+                "name":"LR_brow_jnt",
+                "showSlider":["tx","ty","sy"]
+            },
+            {
+                "name":"LR_innBrow_jnt",
+                "showSlider":["tx","ty","sy"]
+            }
+        ],
+        "eye" :[
+            {
+                "name":"LR_eye_jnt",
+                "showSlider":["tx","ty","rz"]
+            }, 
+            {
+                "name":"LR_pupil_jnt",
+                "showSlider":["tx","ty","sxy"]
+            }
+        ],
+        "mouth" :[
+            {
+                "name":"mouth_jnt",
+                "showSlider":["ty","sx","sy"]
+            },
+            {
+                "name":"LR_lipInner_jnt",
+                "showSlider":["sx","sy","rz"]
+            }
+        ]
+    },
+    "bind": {
+      "face": {
+        "LR_malar_jnt": [
+          "L_malar_jnt",
+          "R_malar_jnt"
+        ],
+        "LR_cheek_jnt": [
+          "L_cheek_jnt",
+          "R_cheek_jnt"
+        ],
+        "LR_cheekUp_jnt": [
+          "L_cheekUp_jnt",
+          "R_cheekUp_jnt"
+        ],
+        "LR_levator_jnt": [
+          "L_levator_jnt",
+          "R_levator_jnt"
+        ],
+        "LR_chin_jnt": [
+          "L_chin_jnt",
+          "R_chin_jnt"
+        ],
+        "LR_mandible_jnt": [
+          "L_mandible_jnt",
+          "R_mandible_jnt"
+        ],
+        "LR_mandibleCape_jnt": [
+          "L_mandibleCape_jnt",
+          "R_mandibleCape_jnt"
+        ]
+      },
+      "node": {
+        "LR_philtrum_jnt": [
+          "L_philtrum_jnt",
+          "R_philtrum_jnt"
+        ],
+        "LR_noseWing_jnt": [
+          "L_noseWing_jnt",
+          "R_noseWing_jnt"
+        ]
+      },
+      "ear": {
+        "LR_earBase_jnt": [
+          "L_earBase_jnt",
+          "R_earBase_jnt"
+        ],
+        "LR_earUpper_jnt": [
+          "L_earUpper_jnt",
+          "R_earUpper_jnt"
+        ],
+        "LR_earLower_jnt": [
+          "L_earLower_jnt",
+          "R_earLower_jnt"
+        ],
+        "LR_earUpperEnd_jnt": [
+          "L_earUpperEnd_jnt",
+          "R_earUpperEnd_jnt"
+        ],
+        "LR_earLowerEnd_jnt": [
+          "L_earLowerEnd_jnt",
+          "R_earLowerEnd_jnt"
+        ]
+      },
+      "brow": {
+        "LR_brow_jnt": [
+          "L_brow_jnt",
+          "R_brow_jnt"
+        ],
+        "LR_innBrow_jnt": [
+          "L_innBrow_jnt",
+          "R_innBrow_jnt"
+        ],
+        "LR_midBrow_jnt": [
+          "L_midBrow_jnt",
+          "R_midBrow_jnt"
+        ],
+        "LR_outBrow_jnt": [
+          "L_outBrow_jnt",
+          "R_outBrow_jnt"
+        ]
+      },
+      "eye": {
+        "LR_eye_jnt": [
+          "L_eye_jnt",
+          "R_eye_jnt"
+        ],
+        "LR_eScale_jnt": [
+          "L_eScale_jnt",
+          "R_eScale_jnt"
+        ],
+        "LR_interEyeLid_jnt": [
+          "L_interEyeLid_jnt",
+          "R_interEyeLid_jnt"
+        ],
+        "LR_outerEyeLid_jnt": [
+          "L_outerEyeLid_jnt",
+          "R_outerEyeLid_jnt"
+        ],
+        "LR_upperEyeLidIn_jnt": [
+          "L_upperEyeLidIn_jnt",
+          "R_upperEyeLidIn_jnt"
+        ],
+        "LR_upperEyeLid_jnt": [
+          "L_upperEyeLid_jnt",
+          "R_upperEyeLid_jnt"
+        ],
+        "LR_upperEyeLidOut_jnt": [
+          "L_upperEyeLidOut_jnt",
+          "R_upperEyeLidOut_jnt"
+        ],
+        "LR_lowerEyeLidIn_jnt": [
+          "L_lowerEyeLidIn_jnt",
+          "R_lowerEyeLidIn_jnt"
+        ],
+        "LR_lowerEyeLid_jnt": [
+          "L_lowerEyeLid_jnt",
+          "R_lowerEyeLid_jnt"
+        ],
+        "LR_lowerEyeLidOut_jnt": [
+          "L_lowerEyeLidOut_jnt",
+          "R_lowerEyeLidOut_jnt"
+        ],
+        "LR_pupil_jnt": [
+          "L_pupil_jnt",
+          "R_pupil_jnt"
+        ]
+      },
+      "mouth": {
+        "UL_Lip_jnt": [
+          "upperLip_jnt",
+          "lowerLip_jnt"
+        ],
+        "LR_upperLip_jnt": [
+          "L_upperLip_jnt",
+          "R_upperLip_jnt"
+        ],
+        "LR_lowerLip_jnt": [
+          "L_lowerLip_jnt",
+          "R_lowerLip_jnt"
+        ],
+        "LR_lipInner_jnt": [
+          "L_lipInner_jnt",
+          "R_lipInner_jnt"
+        ],
+        "LR_lipDown_jnt": [
+          "L_lipDown_jnt",
+          "R_lipDown_jnt"
+        ]
+      }
+    }
+  }

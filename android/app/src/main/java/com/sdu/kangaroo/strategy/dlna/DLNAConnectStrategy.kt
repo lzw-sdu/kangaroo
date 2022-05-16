@@ -1,10 +1,9 @@
 package com.sdu.kangaroo.strategy.dlna
 
-import com.google.gson.Gson
 import com.sdu.kangaroo.MethodChannelStrategy
 import com.sdu.kangaroo.handler.DLNAHandler
-import com.ykbjson.lib.screening.bean.DeviceInfo
-import com.ykbjson.lib.screening.bean.MediaInfo
+import com.sdu.kangaroo.screening.bean.DeviceInfo
+import com.sdu.kangaroo.screening.bean.MediaInfo
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 
@@ -19,8 +18,12 @@ class DLNAConnectStrategy : MethodChannelStrategy {
             result.error("", "", null)
             return
         }
-        val gson = Gson()
-        val deviceInfo = gson.fromJson(call.arguments.toString(), DeviceInfo::class.java)
+        var deviceInfo: DeviceInfo? = null
+        for (i in 0 until DLNAHandler.instance.deviceList.size) {
+            if (DLNAHandler.instance.deviceList[i].name == call.arguments as String) {
+                deviceInfo = DLNAHandler.instance.deviceList[i]
+            }
+        }
         if (deviceInfo == null) {
             result.error("", "", null)
             return

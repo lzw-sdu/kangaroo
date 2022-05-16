@@ -1,7 +1,7 @@
 package com.sdu.kangaroo.strategy.dlna
 
 import com.sdu.kangaroo.MethodChannelStrategy
-import com.ykbjson.lib.screening.DLNAManager
+import com.sdu.kangaroo.screening.DLNAManager
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 

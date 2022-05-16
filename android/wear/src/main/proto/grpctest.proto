@@ -1,0 +1,55 @@
+syntax = "proto3";
+
+option java_package = "com.sdu.kangaroo";
+
+// 一元调用
+message RequEcho{
+    string content = 1;
+}
+
+message RespEcho{
+    string content = 1;
+}
+
+service EchoTest {
+    rpc echo (RequEcho) returns (RespEcho) {}
+}
+
+// 服务端流式
+message RequState{
+    int32 started = 1;
+}
+
+message RespState{
+    int32 stat = 1;
+}
+
+service StateTest {
+    rpc listen (RequState) returns (stream RespState) {}
+}
+
+// 客户端流式
+message RequHearth{
+    bool living = 1;
+}
+
+message RespHearth{
+    int32 code = 1;
+}
+
+service HearthTest {
+    rpc report (stream RequHearth) returns (RespHearth) {}
+}
+
+// 双向流式
+message RequChat{
+    string message = 1;
+}
+
+message RespChat{
+    string message = 1;
+}
+
+service ChatTest {
+    rpc chat (stream RequChat) returns (stream RespChat) {}
+}

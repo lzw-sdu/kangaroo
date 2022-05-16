@@ -1,0 +1,63 @@
+{
+    "MetaData": {
+        "Generator": "NamaEngine v1.0.0.",
+        "CreateTime": "2021-12-22 17:51:12",
+        "Version": "1.0.0.0"
+    },
+    "animLogicNodes": [
+        {
+            "name": "DefaultState",
+            "executeOrder": 0,
+            "type": "Default",
+            "animGraphNodes": {
+                "animNodeAnimClipName": "DefaultAnimNode",
+                "blendNodeBlendByIntWithCacheName": "BaseBlendNode"
+            }
+        },
+        {
+            "name": "IdleState",
+            "executeOrder": 0,
+            "type": "Random",
+            "animGraphNodes": {
+                "animNodeAnimClipName": "IdleAnimNode",
+                "blendNodeBlendByIntWithCacheName": "BaseBlendNode"
+            }
+        },
+        {
+            "name": "TalkState",
+            "executeOrder": 0,
+            "type": "Random",
+            "animGraphNodes": {
+                "animNodeAnimClipName": "TalkAnimNode",
+                "blendNodeBlendByIntWithCacheName": "BaseBlendNode"
+            }
+        },
+        {
+            "name": "ListenState",
+            "executeOrder": 0,
+            "type": "RandomGroup",
+            "animGraphNodes": {
+                "animNodeAnimClipName": "ListenAnimNode",
+                "blendNodeBlendByIntWithCacheName": "BaseBlendNode"
+            }
+        },
+        {
+            "name": "HeadAnims",
+            "executeOrder": 0,
+            "type": "Default",
+            "animGraphNodes": {
+                "animNodeAnimClipName": "HeadAnimNode",
+                "blendNodeBlendByIntWithCacheName": "HeadBlendNode"
+            }
+        },
+        {
+            "name": "ItemAnims",
+            "executeOrder": 0,
+            "type": "Default",
+            "animGraphNodes": {
+                "animNodeAnimClipName": "ItemAnimNode",
+                "blendNodeBlendByIntWithCacheName": "ItemBlendNode"
+            }
+        }
+    ]
+}

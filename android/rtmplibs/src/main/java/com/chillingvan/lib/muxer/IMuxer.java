@@ -5,7 +5,7 @@ import android.media.MediaCodec;
 import com.chillingvan.lib.publisher.StreamPublisher;
 
 /**
- * Created by Chilling on 2017/5/21.
+ *
  */
 
 public interface IMuxer {

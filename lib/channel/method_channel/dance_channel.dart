@@ -8,4 +8,9 @@ class DanceMethodChanel {
     MethodChannel channel = MethodChannel(DANCE_CHANNEL);
     channel.invokeMethod(METHOD_DANCE_UI);
   }
+
+  void navigateToMirrorUI() {
+    MethodChannel channel = MethodChannel(DANCE_CHANNEL);
+    channel.invokeMethod("mirror");
+  }
 }

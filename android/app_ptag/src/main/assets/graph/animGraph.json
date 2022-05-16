@@ -1,0 +1,451 @@
+{
+    "MetaData": {
+        "Generator": "NamaEngine v1.0.0.",
+        "CreateTime": "2021-12-22 17:51:12",
+        "Version": "1.0.0.0"
+    },
+    "boneMasks":{
+        "HeadMask":{
+            "type":"Positive",
+            "mask": ["Head_M","M_jawUpper_jnt","M_jaw_open","upperHead","foreHead",
+                    "L_brow","L_innerBrow","L_middleBrow","L_outerBrow","R_brow","R_innerBrow","R_middleBrow","R_outerBrow",
+                    "L_eye","L_outer_eyeLid_jnt","L_inter_eyeLid_jnt","L_eScale","Eye_L",
+                    "L_eye_lower","L_lower_eyeLid_jnt","L_lower_eyeLidIn_jnt","L_lower_eyeLidOut_jnt",
+                    "L_eye_upper","L_upper_eyeLid_jnt","L_upper_eyeLidIn_jnt","L_upper_eyeLidOut_jnt",
+                    "R_eye","R_outer_eyeLid_jnt","R_inter_eyeLid_jnt","R_eScale","Eye_R",
+                    "R_eye_lower","R_lower_eyeLid_jnt","R_lower_eyeLidIn_jnt","R_lower_eyeLidOut_jnt",
+                    "R_eye_upper","R_upper_eyeLid_jnt","R_upper_eyeLidIn_jnt","R_upper_eyeLidOut_jnt"]
+        },
+        "FullBodyMask":{
+            "type":"Negative",
+            "mask": ["Ankle_L","Ankle_R","Chest_M","Cup_L","Cup_R","ElbowPart1_L","ElbowPart1_R","Elbow_L","Elbow_R",
+                "Eye_L","Eye_R","Global","Head_M","HipPart1_L","HipPart1_R","Hip_L","Hip_R",
+                "IndexFinger1_L","IndexFinger1_R","IndexFinger2_L","IndexFinger2_R","IndexFinger3_L","IndexFinger3_R","IndexFinger4_L","IndexFinger4_R",
+                "KneePart1_L","KneePart1_R","Knee_L","Knee_R","L_brow","L_eScale","L_eye","L_eye_lower","L_eye_upper","L_innerBrow",
+                "L_inter_eyeLid_jnt","L_lower_eyeLidIn_jnt","L_lower_eyeLidOut_jnt","L_lower_eyeLid_jnt","L_middleBrow","L_outerBrow",
+                "L_outer_eyeLid_jnt","L_upper_eyeLidIn_jnt","L_upper_eyeLidOut_jnt","L_upper_eyeLid_jnt","M_jawUpper_jnt","M_jaw_open",
+                "MiddleFinger1_L","MiddleFinger1_R","MiddleFinger2_L","MiddleFinger2_R","MiddleFinger3_L","MiddleFinger3_R","MiddleFinger4_L",
+                "MiddleFinger4_R","NeckPart1_M","Neck_M","PinkyFinger1_L","PinkyFinger1_R","PinkyFinger2_L","PinkyFinger2_R","PinkyFinger3_L",
+                "PinkyFinger3_R","PinkyFinger4_L","PinkyFinger4_R","R_brow","R_eScale","R_eye","R_eye_lower","R_eye_upper","R_innerBrow",
+                "R_inter_eyeRid_jnt","R_lower_eyeLidIn_jnt","R_lower_eyeLidOut_jnt","R_lower_eyeLid_jnt","R_middleBrow","R_outerBrow",
+                "R_outer_eyeRid_jnt","R_upper_eyeLidIn_jnt","R_upper_eyeLidOut_jnt","R_upper_eyeLid_jnt","RingFinger1_L","RingFinger1_R",
+                "RingFinger2_L","RingFinger2_R","RingFinger3_L","RingFinger3_R","RingFinger4_L","RingFinger4_R","Root_M","Scapula_L","Scapula_R",
+                "ShoulderPart1_L","ShoulderPart1_R","Shoulder_L","Shoulder_R","Spine1Part1_M","Spine1_M","ThumbFinger1_L","ThumbFinger1_R",
+                "ThumbFinger2_L","ThumbFinger2_R","ThumbFinger3_L","ThumbFinger3_R","ThumbFinger4_L","ThumbFinger4_R","ToesEnd_L","ToesEnd_R",
+                "Toes_L","Toes_R","Wrist_L","Wrist_R","foreHead","upperHead"]
+        }
+    },
+    "blendshapeMasks":{
+    },
+    "paramNodes":{
+        "ResultNodeWeight":{"type":"Float","value": 1.0},
+        "BaseBlendNodeActiveIndex":{"type":"Int","value": 0},
+        "DefaultStateBlendTime":{"type":"Float","value": 0.5},
+        "IdleStateBlendTime":{"type":"Float","value": 0.5},
+        "TalkStateBlendTime":{"type":"Float","value": 0.5},
+        "ListenStateBlendTime":{"type":"Float","value": 0.5},
+        "DefaultAnimNodeSpeed":{"type":"Float","value": 1.0},
+        "DefaultAnimNodeProgress":{"type":"Float","value": 0.0},
+        "IdleAnimNodeSpeed":{"type":"Float","value": 1.0},
+        "IdleAnimNodeProgress":{"type":"Float","value": 0.0},
+        "TalkAnimNodeSpeed":{"type":"Float","value": 1.0},
+        "TalkAnimNodeProgress":{"type":"Float","value": 0.0},
+        "ListenAnimNodeSpeed":{"type":"Float","value": 1.0},
+        "ListenAnimNodeProgress":{"type":"Float","value": 0.0},
+        "HeadBlendNodeBlendTime0":{"type":"Float","value": 0.5},
+        "HeadAnimNodeSpeed":{"type":"Float","value": 1.0},
+        "HeadAnimNodeProgress":{"type":"Float","value": 0.0},
+        "ItemBlendNodeBlendTime0":{"type":"Float","value": 0.5},
+        "ItemAnimNodeSpeed":{"type":"Float","value": 1.0},
+        "ItemAnimNodeProgress":{"type":"Float","value": 0.0},
+        "HeadAnimActiveBlendTime":{"type":"Float","value": 0.5},
+        "ItemAnimActiveBlendTime":{"type":"Float","value": 0.5},
+        "HeadAnimActive":{"type":"Bool","value": false},
+        "ItemAnimActive":{"type":"Bool","value": false}
+    },
+    "animGraphNodes":[
+        {
+            "UID":1,
+            "name":"ResultNode",
+            "type":"Result",
+            "updateMode":"DisableOnZeroWeight",
+            "animGraphNodeInputSlots":[
+                {
+                    "name":"Result",
+                    "linkNodeUID":13,
+                    "linkNodeName":"HumanProcessorLerpNode"
+                }
+            ],
+            "paramNodeInputSlots":{
+                "Weight":{
+                    "paramNodeName":"ResultNodeWeight"
+                }
+            },
+            "paramNodeOutputSlots":{
+                "Weight":{
+                    "paramNodeName":"ResultNodeWeight"
+                }
+            },
+            "specialValue":{
+                "blending":"Override",
+                "weight":1.0,
+                "maskName":""
+            }
+        },
+        {
+            "UID":2,
+            "name":"BaseBlendNode",
+            "type":"BlendByIntWithCache",
+            "updateMode":"DisableOnZeroWeight",
+            "animGraphNodeInputSlots":[
+                {
+                    "name":"Blend Pose 0",
+                    "linkNodeUID":3,
+                    "linkNodeName":"DefaultAnimNode"
+                },
+                {
+                    "name":"Blend Pose 1",
+                    "linkNodeUID":4,
+                    "linkNodeName":"IdleAnimNode"
+                },
+                {
+                    "name":"Blend Pose 2",
+                    "linkNodeUID":5,
+                    "linkNodeName":"TalkAnimNode"
+                },
+                {
+                    "name":"Blend Pose 3",
+                    "linkNodeUID":6,
+                    "linkNodeName":"ListenAnimNode"
+                }
+            ],
+            "paramNodeInputSlots":{
+                "ActiveIndex":{
+                    "paramNodeName":"BaseBlendNodeActiveIndex"
+                },
+                "BlendTime0":{
+                    "paramNodeName":"DefaultStateBlendTime"
+                },
+                "BlendTime1":{
+                    "paramNodeName":"IdleStateBlendTime"
+                },
+                "BlendTime2":{
+                    "paramNodeName":"TalkStateBlendTime"
+                },
+                "BlendTime3":{
+                    "paramNodeName":"ListenStateBlendTime"
+                }
+            },
+            "paramNodeOutputSlots":{
+                "ActiveIndex":{
+                    "paramNodeName":"BaseBlendNodeActiveIndex"
+                },
+                "BlendTime0":{
+                    "paramNodeName":"DefaultStateBlendTime"
+                },
+                "BlendTime1":{
+                    "paramNodeName":"IdleStateBlendTime"
+                },
+                "BlendTime2":{
+                    "paramNodeName":"TalkStateBlendTime"
+                },
+                "BlendTime3":{
+                    "paramNodeName":"ListenStateBlendTime"
+                }
+            },
+            "specialValue":{
+                "blendTimes":[0.5,0.5,0.5,0.5],
+                "resetAnimOnActivation":true,
+                "activeIndex":0
+            }
+        },
+        {
+            "UID":3,
+            "name":"DefaultAnimNode",
+            "type":"AnimClip",
+            "updateMode":"DisableOnZeroWeight",
+            "paramNodeInputSlots":{
+                "Speed":{
+                    "paramNodeName":"DefaultAnimNodeSpeed"
+                }
+            },
+            "paramNodeOutputSlots":{
+                "Speed":{
+                    "paramNodeName":"DefaultAnimNodeSpeed"
+                },
+                "Progress":{
+                    "paramNodeName":"DefaultAnimNodeProgress"
+                }
+            },
+            "specialValue":{
+                "speed": 1.0,
+                "blending":"Override",
+                "isLoop": true
+            }
+        },
+        {
+            "UID":4,
+            "name":"IdleAnimNode",
+            "type":"AnimClip",
+            "updateMode":"DisableOnZeroWeight",
+            "paramNodeInputSlots":{
+                "Speed":{
+                    "paramNodeName":"IdleAnimNodeSpeed"
+                }
+            },
+            "paramNodeOutputSlots":{
+                "Speed":{
+                    "paramNodeName":"IdleAnimNodeSpeed"
+                },
+                "Progress":{
+                    "paramNodeName":"IdleAnimNodeProgress"
+                }
+            },
+            "specialValue":{
+                "speed": 1.0,
+                "blending":"Override",
+                "isLoop": false
+            }
+        },
+        {
+            "UID":5,
+            "name":"TalkAnimNode",
+            "type":"AnimClip",
+            "updateMode":"DisableOnZeroWeight",
+            "paramNodeInputSlots":{
+                "Speed":{
+                    "paramNodeName":"TalkAnimNodeSpeed"
+                }
+            },
+            "paramNodeOutputSlots":{
+                "Speed":{
+                    "paramNodeName":"TalkAnimNodeSpeed"
+                },
+                "Progress":{
+                    "paramNodeName":"TalkAnimNodeProgress"
+                }
+            },
+            "specialValue":{
+                "speed": 1.0,
+                "blending":"Override",
+                "isLoop": false
+            }
+        },
+        {
+            "UID":6,
+            "name":"ListenAnimNode",
+            "type":"AnimClip",
+            "updateMode":"DisableOnZeroWeight",
+            "paramNodeInputSlots":{
+                "Speed":{
+                    "paramNodeName":"ListenAnimNodeSpeed"
+                }
+            },
+            "paramNodeOutputSlots":{
+                "Speed":{
+                    "paramNodeName":"ListenAnimNodeSpeed"
+                },
+                "Progress":{
+                    "paramNodeName":"ListenAnimNodeProgress"
+                }
+            },
+            "specialValue":{
+                "speed": 1.0,
+                "blending":"Override",
+                "isLoop": false
+            }
+        },
+        {
+            "UID":7,
+            "name":"HeadBlendNode",
+            "type":"BlendByIntWithCache",
+            "updateMode":"DisableOnZeroWeight",
+            "animGraphNodeInputSlots":[
+                {
+                    "name":"Blend Pose 0",
+                    "linkNodeUID":8,
+                    "paramNodeName":"HeadAnimNode"
+                }
+            ],
+            "paramNodeInputSlots":{
+                "BlendTime0":{
+                    "paramNodeName":"HeadBlendNodeBlendTime0"
+                }
+            },
+            "paramNodeOutputSlots":{
+                "BlendTime0":{
+                    "paramNodeName":"HeadBlendNodeBlendTime0"
+                }
+            },
+            "specialValue":{
+                "blendTimes":[0.5],
+                "resetAnimOnActivation":true,
+                "activeIndex":0
+            }
+        },
+        {
+            "UID":8,
+            "name":"HeadAnimNode",
+            "type":"AnimClip",
+            "updateMode":"DisableOnZeroWeight",
+            "paramNodeInputSlots":{
+                "Speed":{
+                    "paramNodeName":"HeadAnimNodeSpeed"
+                }
+            },
+            "paramNodeOutputSlots":{
+                "Speed":{
+                    "paramNodeName":"HeadAnimNodeSpeed"
+                },
+                "Progress":{
+                    "paramNodeName":"HeadAnimNodeProgress"
+                }
+            },
+            "specialValue":{
+                "speed": 1.0,
+                "blending":"Override",
+                "isLoop": true
+            }
+        },
+        {
+            "UID":9,
+            "name":"ItemBlendNode",
+            "type":"BlendByIntWithCache",
+            "updateMode":"DisableOnZeroWeight",
+            "animGraphNodeInputSlots":[
+                {
+                    "name":"Blend Pose 0",
+                    "linkNodeUID":10,
+                    "linkNodeName":"ItemAnimNode"
+                }
+            ],
+            "paramNodeInputSlots":{
+                "BlendTime0":{
+                    "paramNodeName":"ItemBlendNodeBlendTime0"
+                }
+            },
+            "paramNodeOutputSlots":{
+                "BlendTime0":{
+                    "paramNodeName":"ItemBlendNodeBlendTime0"
+                }
+            },
+            "specialValue":{
+                "blendTimes":[0.5],
+                "resetAnimOnActivation":true,
+                "activeIndex":0
+            }
+        },
+        {
+            "UID":10,
+            "name":"ItemAnimNode",
+            "type":"AnimClip",
+            "updateMode":"DisableOnZeroWeight",
+            "paramNodeInputSlots":{
+                "Speed":{
+                    "paramNodeName":"ItemAnimNodeSpeed"
+                }
+            },
+            "paramNodeOutputSlots":{
+                "Speed":{
+                    "paramNodeName":"ItemAnimNodeSpeed"
+                },
+                "Progress":{
+                    "paramNodeName":"ItemAnimNodeProgress"
+                }
+            },
+            "specialValue":{
+                "speed": 1.0,
+                "blending":"Override",
+                "isLoop": true
+            }
+        },
+        {
+            "UID":11,
+            "name":"BaseHeadBlendWithMaskNode",
+            "type":"BlendWithMask",
+            "updateMode":"DisableOnZeroWeight",
+            "animGraphNodeInputSlots":[
+                {
+                    "name":"Base Pose",
+                    "linkNodeUID":2,
+                    "linkNodeName":"BaseBlendNode"
+                },
+                {
+                    "name":"Mask Pose 0",
+                    "linkNodeUID":7,
+                    "linkNodeName":"HeadBlendNode"
+                },
+                {
+                    "name":"Mask Pose 1",
+                    "linkNodeUID":9,
+                    "linkNodeName":"ItemBlendNode"
+                }
+            ],
+            "paramNodeInputSlots":{
+                "BlendTime0":{
+                    "paramNodeName":"HeadAnimBlendTime"
+                },
+                "BlendTime1":{
+                    "paramNodeName":"ItemAnimBlendTime"
+                },
+                "Active0":{
+                    "paramNodeName":"HeadAnimActive"
+                },
+                "Active1":{
+                    "paramNodeName":"ItemAnimActive"
+                }
+            },
+            "paramNodeOutputSlots":{
+                "BlendTime0":{
+                    "paramNodeName":"HeadAnimActiveBlendTime"
+                },
+                "BlendTime1":{
+                    "paramNodeName":"ItemAnimActiveBlendTime"
+                },
+                "Active0":{
+                    "paramNodeName":"HeadAnimActive"
+                },
+                "Active1":{
+                    "paramNodeName":"ItemAnimActive"
+                }
+            },
+            "specialValue":{
+                "maskNames":["HeadMask","FullBodyMask"],
+                "blendTimes":[0.5,0.0],
+                "actives":[true,true]
+            }
+        },
+        {
+            "UID":12,
+            "name":"HumanProcessorNode",
+            "type":"AnimClipExternal",
+            "updateMode":"DisableOnZeroWeight",
+            "specialValue":{
+                "blending":"Override"
+            }
+        },
+        {
+            "UID":13,
+            "name":"HumanProcessorLerpNode",
+            "type":"LerpByTrigger",
+            "updateMode":"DisableOnZeroWeight",
+            "animGraphNodeInputSlots":[
+                {
+                    "name":"A",
+                    "linkNodeUID":11,
+                    "linkNodeName":"BaseHeadBlendWithMaskNode"
+                },
+                {
+                    "name":"B",
+                    "linkNodeUID":12,
+                    "linkNodeName":"HumanProcessorNode"
+                }
+            ],
+            "specialValue":{
+                "blendTimes":[0.5,0.5],
+                "resetAnimOnActivation":false,
+                "activeIndex":0
+            }
+        }
+    ]
+}

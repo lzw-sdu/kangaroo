@@ -1,0 +1,516 @@
+{
+  "defaultList": [
+    {
+      "key": "face",
+      "zh": "脸"
+    },
+    {
+      "key": "nose",
+      "zh": "鼻子"
+    },
+    {
+      "key": "ear",
+      "zh": "耳朵"
+    },
+    {
+      "key": "brow",
+      "zh": "眉毛"
+    },
+    {
+      "key": "eye",
+      "zh": "眼睛"
+    },
+    {
+      "key": "mouth",
+      "zh": "嘴巴"
+    },
+    {
+      "key": "forehead_jnt",
+      "zh": "额头"
+    },
+    {
+      "key": "ophryon_jnt",
+      "zh": "印堂"
+    },
+    {
+      "key": "L_malar_jnt",
+      "zh": "左太阳穴"
+    },
+    {
+      "key": "R_malar_jnt",
+      "zh": "右太阳穴"
+    },
+    {
+      "key": "L_cheek_jnt",
+      "zh": "左颧骨"
+    },
+    {
+      "key": "R_cheek_jnt",
+      "zh": "右颧骨"
+    },
+    {
+      "key": "L_cheekUp_jnt",
+      "zh": "左脸颊"
+    },
+    {
+      "key": "R_cheekUp_jnt",
+      "zh": "右脸颊"
+    },
+    {
+      "key": "L_levator_jnt",
+      "zh": "左咬肌"
+    },
+    {
+      "key": "R_levator_jnt",
+      "zh": "右咬肌"
+    },
+    {
+      "key": "mouth_root_jnt",
+      "zh": "下半脸"
+    },
+    {
+      "key": "chin_jnt",
+      "zh": "下巴尖"
+    },
+    {
+      "key": "L_chin_jnt",
+      "zh": "左下巴"
+    },
+    {
+      "key": "R_chin_jnt",
+      "zh": "右下巴"
+    },
+    {
+      "key": "L_mandible_jnt",
+      "zh": "左下颌"
+    },
+    {
+      "key": "R_mandible_jnt",
+      "zh": "右下颌"
+    },
+    {
+      "key": "L_mandibleCape_jnt",
+      "zh": "左下颌角"
+    },
+    {
+      "key": "R_mandibleCape_jnt",
+      "zh": "右下颌角"
+    },
+    {
+      "key": "nose_jnt",
+      "zh": "鼻子"
+    },
+    {
+      "key": "noseBridge_jnt",
+      "zh": "鼻梁"
+    },
+	{
+	  "key": "noseBridgeUp_jnt",
+	  "zh": "山根"
+	},
+    {
+      "key": "L_philtrum_jnt",
+      "zh": "左鼻翼侧"
+    },
+    {
+      "key": "R_philtrum_jnt",
+      "zh": "右鼻翼侧"
+    },
+    {
+      "key": "L_noseWing_jnt",
+      "zh": "左鼻翼"
+    },
+    {
+      "key": "R_noseWing_jnt",
+      "zh": "右鼻翼"
+    },
+    {
+      "key": "noseHead_jnt",
+      "zh": "鼻头"
+    },
+    {
+      "key": "noseBottom_jnt",
+      "zh": "鼻底"
+    },
+    {
+      "key": "L_earBase_jnt",
+      "zh": "左耳朵"
+    },
+    {
+      "key": "R_earBase_jnt",
+      "zh": "右耳朵"
+    },
+    {
+      "key": "L_earUpper_jnt",
+      "zh": "左耳廓"
+    },
+    {
+      "key": "R_earUpper_jnt",
+      "zh": "右耳廓"
+    },
+    {
+      "key": "L_earLower_jnt",
+      "zh": "左耳垂"
+    },
+    {
+      "key": "R_earLower_jnt",
+      "zh": "右耳垂"
+    },
+    {
+      "key": "L_earUpperEnd_jnt",
+      "zh": "左耳尖"
+    },
+    {
+      "key": "R_earUpperEnd_jnt",
+      "zh": "右耳尖"
+    },
+    {
+      "key": "L_earLowerEnd_jnt",
+      "zh": "左耳廓尾"
+    },
+    {
+      "key": "R_earLowerEnd_jnt",
+      "zh": "右耳廓尾"
+    },
+    {
+      "key": "L_brow_jnt",
+      "zh": "左眉毛"
+    },
+    {
+      "key": "R_brow_jnt",
+      "zh": "右眉毛"
+    },
+    {
+      "key": "L_innBrow_jnt",
+      "zh": "左眉头"
+    },
+    {
+      "key": "R_innBrow_jnt",
+      "zh": "右眉头"
+    },
+    {
+      "key": "L_midBrow_jnt",
+      "zh": "左眉中"
+    },
+    {
+      "key": "R_midBrow_jnt",
+      "zh": "右眉中"
+    },
+    {
+      "key": "L_outBrow_jnt",
+      "zh": "左眉尾"
+    },
+    {
+      "key": "R_outBrow_jnt",
+      "zh": "右眉尾"
+    },
+    {
+      "key": "L_eye_jnt",
+      "zh": "左眼"
+    },
+    {
+      "key": "R_eye_jnt",
+      "zh": "右眼"
+    },
+    {
+      "key": "L_interEyeLid_jnt",
+      "zh": "左内眼角"
+    },
+    {
+      "key": "R_interEyeLid_jnt",
+      "zh": "右内眼角"
+    },
+    {
+      "key": "L_outerEyeLid_jnt",
+      "zh": "左外眼角"
+    },
+    {
+      "key": "R_outerEyeLid_jnt",
+      "zh": "右外眼角"
+    },
+    {
+      "key": "L_upperEyeLidIn_jnt",
+      "zh": "左上眼皮·内"
+    },
+    {
+      "key": "R_upperEyeLidIn_jnt",
+      "zh": "右上眼皮·内"
+    },
+    {
+      "key": "L_upperEyeLid_jnt",
+      "zh": "左上眼皮·中"
+    },
+    {
+      "key": "R_upperEyeLid_jnt",
+      "zh": "右上眼皮·中"
+    },
+    {
+      "key": "L_upperEyeLidOut_jnt",
+      "zh": "左上眼皮·外"
+    },
+    {
+      "key": "R_upperEyeLidOut_jnt",
+      "zh": "右上眼皮·外"
+    },
+    {
+      "key": "L_lowerEyeLidIn_jnt",
+      "zh": "左下眼皮·内"
+    },
+    {
+      "key": "R_lowerEyeLidIn_jnt",
+      "zh": "右下眼皮·内"
+    },
+    {
+      "key": "L_lowerEyeLid_jnt",
+      "zh": "左下眼皮·中"
+    },
+    {
+      "key": "R_lowerEyeLid_jnt",
+      "zh": "右下眼皮·中"
+    },
+    {
+      "key": "L_lowerEyeLidOut_jnt",
+      "zh": "左下眼皮·外"
+    },
+    {
+      "key": "R_lowerEyeLidOut_jnt",
+      "zh": "右下眼皮·外"
+    },
+    {
+      "key": "L_pupil_jnt",
+      "zh": "左瞳孔"
+    },
+    {
+      "key": "R_pupil_jnt",
+      "zh": "右瞳孔"
+    },
+    {
+      "key": "mouth_jnt",
+      "zh": "嘴巴"
+    },
+    {
+      "key": "UL_Lip_jnt",
+      "zh": "唇中"
+    },
+    {
+      "key": "upperLip_jnt",
+      "zh": "上唇中"
+    },
+    {
+      "key": "lowerLip_jnt",
+      "zh": "下唇中"
+    },
+    {
+      "key": "L_upperLip_jnt",
+      "zh": "上唇左"
+    },
+    {
+      "key": "R_upperLip_jnt",
+      "zh": "上唇右"
+    },
+    {
+      "key": "L_lowerLip_jnt",
+      "zh": "下唇左"
+    },
+    {
+      "key": "R_lowerLip_jnt",
+      "zh": "下唇右"
+    },
+    {
+      "key": "L_lipInner_jnt",
+      "zh": "左嘴角"
+    },
+    {
+      "key": "R_lipInner_jnt",
+      "zh": "右嘴角"
+    },
+    {
+      "key": "L_lipDown_jnt",
+      "zh": "左嘴角·小"
+    },
+    {
+      "key": "R_lipDown_jnt",
+      "zh": "右嘴角·小"
+    },
+    {
+      "key": "mouthDn_jnt",
+      "zh": "颏唇沟"
+    },
+    {
+      "key": "LR_malar_jnt",
+      "zh": "太阳穴"
+    },
+    {
+      "key": "LR_cheek_jnt",
+      "zh": "颧骨"
+    },
+    {
+      "key": "LR_cheekUp_jnt",
+      "zh": "脸颊"
+    },
+    {
+      "key": "LR_levator_jnt",
+      "zh": "咬肌"
+    },
+    {
+      "key": "LR_chin_jnt",
+      "zh": "下巴"
+    },
+    {
+      "key": "LR_mandible_jnt",
+      "zh": "下颌"
+    },
+    {
+      "key": "LR_mandibleCape_jnt",
+      "zh": "下颌角"
+    },
+    {
+      "key": "LR_philtrum_jnt",
+      "zh": "鼻翼侧"
+    },
+    {
+      "key": "LR_noseWing_jnt",
+      "zh": "鼻翼"
+    },
+    {
+      "key": "LR_earBase_jnt",
+      "zh": "耳朵"
+    },
+    {
+      "key": "LR_earUpper_jnt",
+      "zh": "耳廓"
+    },
+    {
+      "key": "LR_earLower_jnt",
+      "zh": "耳垂"
+    },
+    {
+      "key": "LR_earUpperEnd_jnt",
+      "zh": "耳尖"
+    },
+    {
+      "key": "LR_earLowerEnd_jnt",
+      "zh": "耳廓尾"
+    },
+    {
+      "key": "LR_brow_jnt",
+      "zh": "眉毛"
+    },
+    {
+      "key": "LR_innBrow_jnt",
+      "zh": "眉头"
+    },
+    {
+      "key": "LR_midBrow_jnt",
+      "zh": "眉中"
+    },
+    {
+      "key": "LR_outBrow_jnt",
+      "zh": "眉尾"
+    },
+    {
+      "key": "LR_eye_jnt",
+      "zh": "眼睛"
+    },
+    {
+      "key": "LR_interEyeLid_jnt",
+      "zh": "内眼角"
+    },
+    {
+      "key": "LR_outerEyeLid_jnt",
+      "zh": "外眼角"
+    },
+    {
+      "key": "LR_upperEyeLidIn_jnt",
+      "zh": "上眼皮·内"
+    },
+    {
+      "key": "LR_upperEyeLid_jnt",
+      "zh": "上眼皮·中"
+    },
+    {
+      "key": "LR_upperEyeLidOut_jnt",
+      "zh": "上眼皮·外"
+    },
+    {
+      "key": "LR_lowerEyeLidIn_jnt",
+      "zh": "下眼皮·内"
+    },
+    {
+      "key": "LR_lowerEyeLid_jnt",
+      "zh": "下眼皮·中"
+    },
+    {
+      "key": "LR_lowerEyeLidOut_jnt",
+      "zh": "下眼皮·外"
+    },
+    {
+      "key": "LR_pupil_jnt",
+      "zh": "瞳孔"
+    },
+    {
+      "key": "LR_upperLip_jnt",
+      "zh": "上唇"
+    },
+    {
+      "key": "LR_lowerLip_jnt",
+      "zh": "下唇"
+    },
+    {
+      "key": "LR_lipInner_jnt",
+      "zh": "嘴角"
+    },
+    {
+      "key": "LR_lipDown_jnt",
+      "zh": "嘴角·小"
+    }
+  ],
+  "slider": {
+    "default":{
+      "tx":"左右",
+      "ty":"上下",
+      "tz":"前后",
+      "rx":"上下",
+      "ry":"左右",
+      "rz":"倾斜",
+      "sx":"宽窄",
+      "sy":"高度",
+      "sz":"饱满"
+    },
+    "custom":{
+      "mouth_root_jnt": {
+        "sy": "上下",
+        "sz": "前后"
+      },
+      "LR_chin_jnt": {
+        "tx": "宽窄"
+      },
+      "LR_mandible_jnt": {
+        "sx": "左右",
+        "sy": "上下"
+      },
+      "noseBridgeUp_jnt": {
+        "sy": "上下"
+      },
+      "LR_brow_jnt": {
+        "tx": "间距",
+        "sy": "宽窄"
+      },
+      "LR_innBrow_jnt": {
+        "tx": "间距",
+        "sy": "宽窄"
+      },
+      "LR_eye_jnt": {
+        "tx": "间距",
+        "rz": "角度"
+      },
+      "LR_pupil_jnt": {
+        "sxy": "大小"
+      },
+      "mouth_jnt":{
+        "sx": "大小",
+        "sy": "薄厚"
+      }
+    }
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "tree": [
+    "head",
+    "upper",
+    "pants",
+    "shoe",
+    "ornament"
+  ],
+  "head": [
+    "skin_color",
+    "hair",
+    "hair_color",
+    "face",
+    "brow",
+    "eyebrow_color",
+    "eye",
+    "iris_color",
+    "eyelash",
+    "mouth",
+    "nose",
+    "beard",
+    "beard_color"
+  ],
+  "upper": [
+    "shirt",
+    "coat",
+    "hoodie",
+    "suit"
+  ],
+  "pants": [
+    "trousers",
+    "shorts",
+    "skirt"
+  ],
+  "shoe": [
+    "shoes"
+  ],
+  "ornament": [
+    "glasses",
+    "earring"
+  ],
+  "color_keys": {
+    "skin_color": [
+      "skin_color"
+    ],
+    "hair_color": [
+      "hair_color"
+    ],
+    "eyebrow_color": [
+      "eyebrow_color"
+    ],
+    "iris_color": [
+      "iris_color"
+    ],
+    "beard_color": [
+      "beard_color"
+    ]
+  },
+  "source": {
+    "head": {
+      "name": "头部",
+      "icon": "fu_asset://icon/head.png",
+      "selected_icon": "fu_asset://icon/head_sel.png"
+    },
+    "upper": {
+      "name": "上装",
+      "icon": "fu_asset://icon/upper.png",
+      "selected_icon": "fu_asset://icon/upper_sel.png"
+    },
+    "pants": {
+      "name": "下装",
+      "icon": "fu_asset://icon/pants.png",
+      "selected_icon": "fu_asset://icon/pants_sel.png"
+    },
+    "shoe": {
+      "name": "鞋子",
+      "icon": "fu_asset://icon/shoe.png",
+      "selected_icon": "fu_asset://icon/shoe_sel.png"
+    },
+    "ornament": {
+      "name": "配饰",
+      "icon": "fu_asset://icon/ornament.png",
+      "selected_icon": "fu_asset://icon/ornament_sel.png"
+    },
+    "skin_color": {
+      "name": "肤色",
+      "icon": "fu_asset://icon/skin_color.png",
+      "selected_icon": "fu_asset://icon/skin_color_sel.png"
+    },
+    "hair": {
+      "name": "发型",
+      "icon": "fu_asset://icon/hair.png",
+      "selected_icon": "fu_asset://icon/hair_sel.png"
+    },
+    "hair_color": {
+      "name": "发色",
+      "icon": "fu_asset://icon/hair_color.png",
+      "selected_icon": "fu_asset://icon/hair_color_sel.png"
+    },
+    "face": {
+      "name": "脸型",
+      "icon": "fu_asset://icon/face.png",
+      "selected_icon": "fu_asset://icon/face_sel.png"
+    },
+    "brow": {
+      "name": "眉毛",
+      "icon": "fu_asset://icon/brow.png",
+      "selected_icon": "fu_asset://icon/brow_sel.png"
+    },
+    "eyebrow_color": {
+      "name": "眉毛颜色",
+      "icon": "fu_asset://icon/eyebrow_color.png",
+      "selected_icon": "fu_asset://icon/eyebrow_color_sel.png"
+    },
+    "eye": {
+      "name": "眼睛",
+      "icon": "fu_asset://icon/eye.png",
+      "selected_icon": "fu_asset://icon/eye_sel.png"
+    },
+    "iris_color": {
+      "name": "瞳色",
+      "icon": "fu_asset://icon/iris_color.png",
+      "selected_icon": "fu_asset://icon/iris_color_sel.png"
+    },
+    "eyelash": {
+      "name": "睫毛",
+      "icon": "fu_asset://icon/eyelash.png",
+      "selected_icon": "fu_asset://icon/eyelash_sel.png"
+    },
+    "mouth": {
+      "name": "唇形",
+      "icon": "fu_asset://icon/mouth.png",
+      "selected_icon": "fu_asset://icon/mouth_sel.png"
+    },
+    "nose": {
+      "name": "鼻子",
+      "icon": "fu_asset://icon/nose.png",
+      "selected_icon": "fu_asset://icon/nose_sel.png"
+    },
+    "beard": {
+      "name": "胡子",
+      "icon": "fu_asset://icon/beard.png",
+      "selected_icon": "fu_asset://icon/beard_sel.png",
+      "filter": {
+        "gender": "male"
+      }
+    },
+    "beard_color": {
+      "name": "胡子颜色",
+      "icon": "fu_asset://icon/beard_color.png",
+      "selected_icon": "fu_asset://icon/beard_color_sel.png",
+      "filter": {
+        "gender": "male"
+      }
+    },
+    "shirt": {
+      "name": "内搭",
+      "icon": "fu_asset://icon/shirt.png",
+      "selected_icon": "fu_asset://icon/shirt_sel.png"
+    },
+    "coat": {
+      "name": "外套",
+      "icon": "fu_asset://icon/coat.png",
+      "selected_icon": "fu_asset://icon/coat_sel.png"
+    },
+    "hoodie": {
+      "name": "帽衫",
+      "icon": "fu_asset://icon/hoodie.png",
+      "selected_icon": "fu_asset://icon/hoodie_sel.png"
+    },
+    "suit": {
+      "name": "套装",
+      "icon": "fu_asset://icon/suit.png",
+      "selected_icon": "fu_asset://icon/suit_sel.png"
+    },
+    "trousers": {
+      "name": "长裤",
+      "icon": "fu_asset://icon/trousers.png",
+      "selected_icon": "fu_asset://icon/trousers_sel.png"
+    },
+    "shorts": {
+      "name": "短裤",
+      "icon": "fu_asset://icon/shorts.png",
+      "selected_icon": "fu_asset://icon/shorts_sel.png"
+    },
+    "skirt": {
+      "name": "裙子",
+      "icon": "fu_asset://icon/skirt.png",
+      "selected_icon": "fu_asset://icon/skirt_sel.png",
+      "filter": {
+        "gender": "female"
+      }
+    },
+    "shoes": {
+      "name": "鞋子",
+      "icon": "fu_asset://icon/shoes.png",
+      "selected_icon": "fu_asset://icon/shoes_sel.png"
+    },
+    "headwear": {
+      "name": "头饰",
+      "icon": "fu_asset://icon/headwear.png",
+      "selected_icon": "fu_asset://icon/headwear_sel.png"
+    },
+    "glasses": {
+      "name": "眼镜",
+      "icon": "fu_asset://icon/glasses.png",
+      "selected_icon": "fu_asset://icon/glasses_sel.png"
+    },
+    "earring": {
+      "name": "耳环",
+      "icon": "fu_asset://icon/earring.png",
+      "selected_icon": "fu_asset://icon/earring_sel.png"
+    }
+  }
+}

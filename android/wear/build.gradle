@@ -1,0 +1,160 @@
+/*
+ * Copyright 2021 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'com.google.protobuf'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId 'com.sdu.kangaroo'
+        // 26 - Second oldest Wear 2.0 version (majority of devices)
+        minSdk 27
+        // 30 - First Wear 3.0 version (and latest version of Wear OS)
+        targetSdk 30
+        versionCode 1
+        versionName "1.0"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+        useIR = true
+        freeCompilerArgs += "-Xopt-in=kotlin.RequiresOptIn"
+    }
+    buildFeatures {
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion "$compose_version"
+    }
+    packagingOptions {
+
+        resources {
+            // Studio default, files not needed for APK, so excluded. If you include the same file
+            // with the same path more than once in the output, you'll get a build conflict.
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+        exclude 'META-INF/INDEX.LIST'
+        exclude 'META-INF/io.netty.versions.properties'
+    }
+
+    protobuf {
+        protoc {
+            if (osdetector.os == "osx") {
+                artifact = 'com.google.protobuf:protoc:3.7.0:osx-x86_64'
+            } else {
+                artifact = 'com.google.protobuf:protoc:3.7.0'
+            }
+        }
+
+        plugins {
+            grpc {
+                if (osdetector.os == "osx") {
+                    artifact = 'io.grpc:protoc-gen-grpc-java:1.32.1:osx-x86_64'
+                } else {
+                    artifact = 'io.grpc:protoc-gen-grpc-java:1.32.1'
+                }
+            }
+            javalite {
+                artifact = 'com.google.protobuf:protoc-gen-javalite:3.0.0'
+            }
+        }
+
+        generateProtoTasks {
+            all().each { task ->
+                task.plugins {
+                    java {}
+                    grpc {}
+                }
+            }
+        }
+        configurations.all {
+            resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9'
+        }
+    }
+
+    sourceSets {
+        main {
+            java {
+                srcDir 'src/main/java'
+            }
+            proto {
+                srcDir 'src/main/proto'
+            }
+        }
+    }
+
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+}
+
+
+dependencies {
+    // TODO: Review Dependencies
+    // General Compose dependencies
+    implementation "androidx.activity:activity-compose:$activity_compose_version"
+    implementation "androidx.compose.ui:ui-tooling-preview:$compose_version"
+    implementation "androidx.compose.foundation:foundation:$compose_version"
+    implementation "androidx.compose.material:material-icons-extended:$compose_version"
+
+    // Compose for Wear OS Dependencies
+    implementation "androidx.wear.compose:compose-material:$wear_compose_version"
+
+    // Foundation is additive, so you can use the mobile version in your Wear OS app.
+    implementation "androidx.wear.compose:compose-foundation:$wear_compose_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.4.1"
+    implementation "androidx.compose.runtime:runtime-livedata:1.2.0-alpha07"
+
+
+    // If you are using Compose Navigation, use the Wear OS version (NOT the
+    // androidx.navigation:navigation-compose version), that is, uncomment the line below.
+    // implementation "androidx.wear.compose:compose-navigation:$wear_compose_version"
+
+    // Testing
+    testImplementation "junit:junit:$junit_version"
+    androidTestImplementation "androidx.test.ext:junit:$androidx_test_ext_junit_version"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_version"
+    androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
+    debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
+
+    implementation 'javax.annotation:javax.annotation-api:1.3.2'
+//    implementation 'com.oplus.icdf:clientsdk:2.1.13'
+
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+    implementation 'io.grpc:grpc-netty:1.32.1'
+    implementation 'io.grpc:grpc-protobuf:1.32.1'
+    implementation 'io.grpc:grpc-stub:1.32.1'
+}

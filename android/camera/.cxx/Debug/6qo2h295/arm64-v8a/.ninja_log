@@ -3,3 +3,6 @@
 0	875	1650125487	CMakeFiles/ncnnbodypose.dir/nanodetncnn.cpp.o	bed9ec77a06c3e52
 1	994	1650125487	CMakeFiles/ncnnbodypose.dir/nanodet.cpp.o	ed53c4366bd174c0
 994	2067	1650125488	/Users/lzw/AndroidStudioProjects/kangaroo/build/camera/intermediates/cxx/Debug/6qo2h295/obj/arm64-v8a/libncnnbodypose.so	65896b0eff1add5b
+15	1133	1650433449	/Users/lzw/AndroidStudioProjects/kangaroo/build/camera/intermediates/cxx/Debug/6qo2h295/obj/arm64-v8a/libncnnbodypose.so	65896b0eff1add5b
+1	1048	1650471499	CMakeFiles/ncnnbodypose.dir/nanodetncnn.cpp.o	bed9ec77a06c3e52
+1048	1856	1650471500	/Users/lzw/AndroidStudioProjects/kangaroo/build/camera/intermediates/cxx/Debug/6qo2h295/obj/arm64-v8a/libncnnbodypose.so	65896b0eff1add5b

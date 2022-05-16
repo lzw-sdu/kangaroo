@@ -1,6 +1,10 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:kangaroo/channel/method_channel/dlna_channel.dart';
 
 import 'child_tv_choose_card_logic.dart';
 
@@ -16,7 +20,7 @@ class ChildTVChooseCardWidget extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            '请选择希望连接的智能电视',
+            '请选择希望连接的智能设备',
             style: TextStyle(
               fontSize: 28.sp,
             ),
@@ -31,17 +35,18 @@ class ChildTVChooseCardWidget extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 350.h,
-            child: ListView.builder(
-              itemBuilder: (context, pos) {
-                return pos == 0
-                    ? _deviceItemFirst(logic, pos)
-                    : _deviceItemOther(logic, pos);
-              },
-              itemExtent: 60.h,
-              itemCount: logic.tvList.length,
-            ),
-          ),
+              height: 350.h,
+              child: Obx(
+                () => ListView.builder(
+                  itemBuilder: (context, pos) {
+                    return pos == 0
+                        ? _deviceItemFirst(logic, pos)
+                        : _deviceItemOther(logic, pos);
+                  },
+                  itemExtent: 60.h,
+                  itemCount: logic.tvList.length,
+                ),
+              )),
           TextButton(
             child: Text('取消'),
             onPressed: () => logic.lastPage(),
@@ -69,13 +74,21 @@ class ChildTVChooseCardWidget extends StatelessWidget {
           Text(
             '${logic.tvList[pos]}（妈妈指定）',
             style: TextStyle(
-              fontSize: 28.sp,
+              fontSize: 16.sp,
               fontWeight: FontWeight.w600,
             ),
           ),
         ],
       ),
-      onTap: () {},
+      onTap: () {
+        DLNAChannel().selectMode(DLNAChannel.SCREEN_MODE);
+        EasyLoading.show(status: '正在连接...');
+        Timer(Duration(seconds: 3), () {
+          EasyLoading.dismiss();
+          logic.nextPage();
+          DLNAChannel().connect(logic.tvList[pos]!);
+        });
+      },
     );
   }
 
@@ -97,13 +110,21 @@ class ChildTVChooseCardWidget extends StatelessWidget {
           Text(
             '${logic.tvList[pos]}',
             style: TextStyle(
-              fontSize: 18.sp,
+              fontSize: 14.sp,
               // fontWeight: FontWeight.w600,
             ),
           ),
         ],
       ),
-      onTap: () {},
+      onTap: () {
+        DLNAChannel().selectMode(DLNAChannel.SCREEN_MODE);
+        EasyLoading.show(status: '正在连接...');
+        Timer(Duration(seconds: 3), () {
+          EasyLoading.dismiss();
+          logic.nextPage();
+          DLNAChannel().connect(logic.tvList[pos]!);
+        });
+      },
     );
   }
 }

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PTAG</string>
+    <string name="genius">可拖拽</string>
+    <string name="xiaoai">默认</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

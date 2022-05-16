@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fu_nav_graph"
+    app:startDestination="@id/homeFragment"
+    >
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.faceunity.app_ptag.ui.home.FuDemoHomeFragment"
+        />
+
+    <fragment
+        android:id="@+id/previewFragment"
+        android:name="com.faceunity.app_ptag.ui.preview.FuDemoPreviewFragment"
+        />
+
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.faceunity.app_ptag.ui.edit.FuDemoEditFragment"
+        >
+    </fragment>
+
+    <fragment
+        android:id="@+id/driveFragment"
+        android:name="com.faceunity.app_ptag.ui.drive.FuDemoDriveFragment"
+        />
+
+    <fragment
+        android:id="@+id/buildFragment"
+        android:name="com.faceunity.app_ptag.ui.build_avatar.FuDemoBuildFragment"
+        />
+
+    <fragment
+        android:id="@+id/editCustomFragment"
+        android:name="com.faceunity.app_ptag.ui.edit_custom.FuDemoEditCustomFragment"
+        />
+
+    <fragment
+        android:id="@+id/functionDemoFragment"
+        android:name="com.faceunity.app_ptag.ui.function_demo.FunctionDemoFragment"
+        />
+
+</navigation>

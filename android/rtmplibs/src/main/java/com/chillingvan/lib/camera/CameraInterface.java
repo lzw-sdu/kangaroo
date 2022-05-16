@@ -4,7 +4,7 @@ import android.graphics.SurfaceTexture;
 import android.hardware.Camera;
 
 /**
- * Created by Chilling on 2017/5/29.
+ * 
  */
 
 public interface CameraInterface {

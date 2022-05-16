@@ -142,7 +142,10 @@ class SignInPage extends StatelessWidget {
                           style: TextStyle(fontSize: 12.5, color: Colors.white),
                         ),
                       ),
-                      onTap: () => logic.login(),
+                      onTap: () => logic.login(
+                        state.accountTextEditingController.text,
+                        state.passwordTextEditingController.text
+                      ),
                     ),
                     scale: 2,
                   ),

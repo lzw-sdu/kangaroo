@@ -3,7 +3,7 @@ package com.chillingvan.lib.muxer;
 import android.media.MediaCodec;
 
 /**
- * Created by Chilling on 2017/12/23.
+ *
  */
 
 public class BufferInfoEx {

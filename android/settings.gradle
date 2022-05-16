@@ -11,10 +11,12 @@ assert flutterSdkPath != null, "flutter.sdk not set in local.properties"
 apply from: "$flutterSdkPath/packages/flutter_tools/gradle/app_plugin_loader.gradle"
 include ':alpha_player'
 include ':camera'
-include ':dance_ui'
 include ':rtmplibs'
 include ':nginxserver'
 include ':webserver'
 include ':screening'
 include ':screenrecorder'
 include ':simplepermission'
+include ':healthy'
+include ':dance'
+include ':app_ptag'

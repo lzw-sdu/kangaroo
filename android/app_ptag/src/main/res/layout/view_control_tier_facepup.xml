@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3000"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/group_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/item_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/group_recycler_view"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/item_type_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/item_recycler_view"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/seek_bar_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/item_type_recycler_view"
+        />
+    <Button
+        android:id="@+id/reset_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/seek_bar_recycler_view"
+        android:layout_alignParentRight="true"
+        android:text="重置"
+        />
+</RelativeLayout>

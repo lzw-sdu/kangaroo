@@ -6,7 +6,7 @@ import android.hardware.Camera;
 import java.io.IOException;
 
 /**
- * Created by Chilling on 2016/12/10.
+ *
  */
 
 public class InstantVideoCamera implements CameraInterface {

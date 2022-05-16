@@ -167,7 +167,7 @@ JNIEXPORT void JNI_OnUnload(JavaVM * vm, void * reserved) {
 // public native boolean loadModel(AssetManager mgr, int modelid, int cpugpu);
 JNIEXPORT jboolean
 
-JNICALL Java_com_example_camera_1kotlin_NcnnBodypose_loadModel(JNIEnv *env, jobject thiz,
+JNICALL Java_com_sdu_kangaroo_NcnnBodypose_loadModel(JNIEnv *env, jobject thiz,
                                                              jobject assetManager, jint modelid,
                                                              jint cpugpu) {
     //modelid目前只支持1、2
@@ -231,7 +231,7 @@ JNICALL Java_com_example_camera_1kotlin_NcnnBodypose_loadModel(JNIEnv *env, jobj
 // java函数实现
 // public native boolean openCamera(int facing);
 JNIEXPORT jboolean JNICALL
-Java_com_example_camera_1kotlin_NcnnBodypose_openCamera(JNIEnv *env, jobject thiz, jint facing) {
+Java_com_sdu_kangaroo_NcnnBodypose_openCamera(JNIEnv *env, jobject thiz, jint facing) {
     if (facing < 0 || facing > 1)
         return JNI_FALSE;
 
@@ -244,7 +244,7 @@ Java_com_example_camera_1kotlin_NcnnBodypose_openCamera(JNIEnv *env, jobject thi
 
 // public native boolean closeCamera();
 JNIEXPORT jboolean
-JNICALL Java_com_example_camera_1kotlin_NcnnBodypose_closeCamera(JNIEnv *env, jobject thiz) {
+JNICALL Java_com_sdu_kangaroo_NcnnBodypose_closeCamera(JNIEnv *env, jobject thiz) {
     __android_log_print(ANDROID_LOG_DEBUG, "ncnn", "closeCamera");
 
     g_camera->close();
@@ -254,7 +254,7 @@ JNICALL Java_com_example_camera_1kotlin_NcnnBodypose_closeCamera(JNIEnv *env, jo
 
 // public native boolean setOutputWindow(Surface surface);
 JNIEXPORT jboolean
-JNICALL Java_com_example_camera_1kotlin_NcnnBodypose_setOutputWindow(JNIEnv *env, jobject thiz,
+JNICALL Java_com_sdu_kangaroo_NcnnBodypose_setOutputWindow(JNIEnv *env, jobject thiz,
                                                                    jobject surface) {
     ANativeWindow *win = ANativeWindow_fromSurface(env, surface);
 

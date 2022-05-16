@@ -5,7 +5,7 @@ import android.media.MediaCodec;
 import com.chillingvan.lib.publisher.StreamPublisher;
 
 /**
- * Created by Chilling on 2017/12/23.
+ *
  */
 
 public abstract class BaseMuxer implements IMuxer {

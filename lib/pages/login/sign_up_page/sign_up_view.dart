@@ -183,7 +183,7 @@ class SignUpPage extends StatelessWidget {
                           style: TextStyle(fontSize: 12.5, color: Colors.white),
                         ),
                       ),
-                      onTap: () {},
+                      onTap: () => logic.signUp(),
                     ),
                     scale: 2,
                   ),

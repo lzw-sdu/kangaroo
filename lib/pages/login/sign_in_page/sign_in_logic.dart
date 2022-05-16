@@ -20,7 +20,7 @@ class SignInLogic extends GetxController {
 
   void showPassWord() {
     state.isShowPassWord.value = !state.isShowPassWord.value;
-    DanceMethodChanel().navigateToDanceUI();
+    // DanceMethodChanel().navigateToDanceUI();
   }
 
   void modifyUsePwd() {
@@ -42,9 +42,16 @@ class SignInLogic extends GetxController {
     });
   }
 
-  void login() {
-    PageRoutes.addRouter(
-        routeName: _isChild ? PageName.childHome : PageName.parentHome);
+  void login(String username, String pwd) {
+    if (username == "parent" && pwd == 'kangaroo') {
+      // PageRoutes.addRouter(routeName: PageName.parentHome);
+      Get.offAllNamed(PageName.parentHome);
+    } else if (username == 'child' && pwd == 'kangaroo') {
+      // PageRoutes.addRouter(routeName: PageName.childHome);
+      Get.offAllNamed(PageName.childHome);
+    } else {
+      Fluttertoast.showToast(msg: "用户名或密码错误");
+    }
   }
 
   void forgetPwd() {
@@ -60,7 +67,7 @@ class SignInLogic extends GetxController {
     //TODO: 发送验证码
     _decreaseCount();
     Fluttertoast.showToast(
-      msg: "验证码已发送",
+      msg: "服务器请求异常，请稍后再试",
     );
   }
 

@@ -1,0 +1,50 @@
+{
+  "list": [
+    {
+      "name": "default",
+      "light": "GAssets/light/common/light_man.bundle",
+      "camera": "GAssets/camera/scene/cam_ptag_quanshen.bundle",
+      "controllerConfig": "GAssets/config/controller_config.bundle",
+      "background": "GAssets/2dsprite/background/bg_ptag.bundle",
+      "backgroundColor": "#F4F7FF",
+      "animationList": [
+        {
+          "name": "huxi",
+          "nodeName": "IdleState",
+          "probability": 15,
+          "repeatable": false,
+          "path": "GAssets/animation/AsiaMale/common/ani_ptag_amale_huxi.bundle"
+        }
+      ],
+      "filter": {
+        "gender": "male"
+      }
+    },
+    {
+      "name": "default",
+      "light": "GAssets/light/common/light_man.bundle",
+      "camera": "GAssets/camera/scene/cam_ptag_quanshen.bundle",
+      "controllerConfig": "GAssets/config/controller_config.bundle",
+      "background": "GAssets/2dsprite/background/bg_ptag.bundle",
+      "backgroundColor": "#F4F7FF",
+      "animationList": [
+        {
+          "name": "huxi",
+          "nodeName": "IdleState",
+          "probability": 15,
+          "repeatable": false,
+          "path": "GAssets/animation/AsiaFemale/common/ani_ptag_afemale_huxi.bundle"
+        }
+      ],
+      "filter": {
+        "gender": "female"
+      }
+    },
+    {
+      "name": "ar",
+      "light": "GAssets/light/common/light_man.bundle",
+      "controllerConfig": "GAssets/config/controller_config.bundle",
+      "background": "GAssets/2dsprite/hand_gesture/fg_danshoubixin.bundle"
+    }
+  ]
+}
