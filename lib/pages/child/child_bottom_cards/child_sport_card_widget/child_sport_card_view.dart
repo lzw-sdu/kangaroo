@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
+import '../../../../channel/method_channel/dance_channel.dart';
 import '../../../../utils/image_assets.dart';
 import 'child_sport_card_logic.dart';
 
@@ -35,7 +36,7 @@ class ChildSportCardWidget extends StatelessWidget {
               nodeName: '健身操',
               videoName: '帕梅拉儿童版',
               topIcon: "assets/image/test212.png",
-              buttonAction: logic.nextPage),
+              buttonAction: DanceMethodChanel().navigateToDanceUI),
         ],
       ),
     );

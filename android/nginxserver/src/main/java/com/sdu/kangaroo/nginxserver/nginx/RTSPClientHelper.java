@@ -24,6 +24,7 @@ public class RTSPClientHelper {
     public static void installAndStartRTSPServer(@NonNull Context context) {
         mRTSPDir = getAppDataDir(context) + "/rtsp";
         copyFileOrDirFromAsset(context, "rtsp");
+        copyFileOrDirFromAsset(context, "alphaVideoGift");
         CommandResult result = Shell.SH.run("chmod -R 777 " + mRTSPDir);
         CommandResult res = Shell.SH.run( mRTSPDir + EXE_FILE_RELATIVE_PATH + " " + mRTSPDir + CONF_FILE_RELATIVE_PATH + " &");
         Log.d(TAG, result.exitCode + "\n" + result.stdout + "\n" + result.stderr);

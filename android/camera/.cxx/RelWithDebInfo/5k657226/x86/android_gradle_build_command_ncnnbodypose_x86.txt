@@ -1,0 +1,7 @@
+Executable : /Users/lzw/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja
+arguments : 
+-C
+/Users/lzw/AndroidStudioProjects/kangaroo-1/android/camera/.cxx/RelWithDebInfo/5k657226/x86
+ncnnbodypose
+jvmArgs : 
+

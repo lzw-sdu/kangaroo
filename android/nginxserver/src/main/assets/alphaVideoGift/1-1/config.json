@@ -1,0 +1,10 @@
+{
+	"portrait": {
+		"path": "1-1.mp4",
+		"align": 8
+	},
+	"landscape": {
+		"path": "1-1.mp4",
+		"align": 2
+	}
+}

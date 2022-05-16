@@ -1,0 +1,40 @@
+{
+  "stringTable": {},
+  "buildFiles": [
+    "/Users/lzw/AndroidStudioProjects/kangaroo-1/android/camera/src/main/jni/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/lzw/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+      "-C",
+      "/Users/lzw/AndroidStudioProjects/kangaroo-1/android/camera/.cxx/RelWithDebInfo/5k657226/x86_64",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/lzw/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+    "-C",
+    "/Users/lzw/AndroidStudioProjects/kangaroo-1/android/camera/.cxx/RelWithDebInfo/5k657226/x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "ncnnbodypose-RelWithDebInfo-x86_64": {
+      "buildCommandComponents": [
+        "/Users/lzw/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+        "-C",
+        "/Users/lzw/AndroidStudioProjects/kangaroo-1/android/camera/.cxx/RelWithDebInfo/5k657226/x86_64",
+        "ncnnbodypose"
+      ],
+      "buildType": "release",
+      "abi": "x86_64",
+      "artifactName": "ncnnbodypose",
+      "output": "/Users/lzw/AndroidStudioProjects/kangaroo-1/build/camera/intermediates/cxx/RelWithDebInfo/5k657226/obj/x86_64/libncnnbodypose.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {},
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

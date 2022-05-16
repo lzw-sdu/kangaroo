@@ -53,7 +53,7 @@ fun MainView(viewModel: DanceScreenViewModel) {
         Box(modifier = Modifier
             .fillMaxSize()
             .clickable {
-//            viewModel.play()
+            viewModel.play()
             }) {
             CameraPreview(startDetectPost = viewModel::startDetectPose)
             Row(

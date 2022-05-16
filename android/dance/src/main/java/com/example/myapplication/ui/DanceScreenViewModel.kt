@@ -368,7 +368,7 @@ class DanceScreenViewModel(mContext: Context) : ViewModel() {
         videoGiftView.detachView()
     }
 
-    val basePath = mContext.getApplicationInfo().dataDir + "/" + "files"
+    val basePath: String = mContext.getApplicationInfo().dataDir
     private fun getResourcePath(path: String): String {
         val dirPath =
             basePath + File.separator + "alphaVideoGift" + File.separator + path + File.separator
